@@ -15,14 +15,14 @@ export const TextInput: React.FC<InputProps> = ({ label, name, error, className,
   const id = rest.id ?? name;
   return (
     <div className={cn('flex flex-col gap-1', className)}>
-      <label htmlFor={id} className="text-xs font-medium text-slate-200">
+      <label htmlFor={id} className="text-xs font-medium text-slate-600 dark:text-slate-200">
         {label}
       </label>
       <input
         id={id}
         name={name}
         className={cn(
-          'rounded-xl border border-slate-700 bg-slate-900/70 px-3 py-2 text-sm text-slate-50 shadow-sm outline-none transition focus-visible:focus-ring',
+          'rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm outline-none transition focus-visible:focus-ring dark:border-slate-700 dark:bg-slate-900/70 dark:text-slate-50',
           error && 'border-red-500/80'
         )}
         aria-invalid={Boolean(error)}
@@ -42,14 +42,14 @@ export const TextArea: React.FC<TextareaProps> = ({ label, name, error, classNam
   const id = rest.id ?? name;
   return (
     <div className={cn('flex flex-col gap-1', className)}>
-      <label htmlFor={id} className="text-xs font-medium text-slate-200">
+      <label htmlFor={id} className="text-xs font-medium text-slate-600 dark:text-slate-200">
         {label}
       </label>
       <textarea
         id={id}
         name={name}
         className={cn(
-          'min-h-[120px] rounded-xl border border-slate-700 bg-slate-900/70 px-3 py-2 text-sm text-slate-50 shadow-sm outline-none transition focus-visible:focus-ring',
+          'min-h-[120px] rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm outline-none transition focus-visible:focus-ring dark:border-slate-700 dark:bg-slate-900/70 dark:text-slate-50',
           error && 'border-red-500/80'
         )}
         aria-invalid={Boolean(error)}

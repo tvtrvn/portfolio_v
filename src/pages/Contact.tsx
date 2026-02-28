@@ -144,14 +144,14 @@ export const ContactPage: React.FC = () => {
             </form>
           </section>
 
-          <aside className="space-y-4 text-sm text-slate-200">
+          <aside className="space-y-4 text-sm text-slate-600 dark:text-slate-200">
             <div className="card space-y-3 p-5">
-              <h2 className="text-sm font-semibold tracking-tight text-slate-50">
+              <h2 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-50">
                 Direct contact
               </h2>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <span className="text-slate-400">Email:</span>{' '}
+                  <span className="text-slate-500 dark:text-slate-400">Email:</span>{' '}
                   <a
                     href={`mailto:${siteData.contact.email}`}
                     className="text-primary hover:underline"
@@ -160,7 +160,7 @@ export const ContactPage: React.FC = () => {
                   </a>
                 </li>
                 <li>
-                  <span className="text-slate-400">GitHub:</span>{' '}
+                  <span className="text-slate-500 dark:text-slate-400">GitHub:</span>{' '}
                   <a
                     href={siteData.contact.github}
                     target="_blank"
@@ -171,7 +171,7 @@ export const ContactPage: React.FC = () => {
                   </a>
                 </li>
                 <li>
-                  <span className="text-slate-400">LinkedIn:</span>{' '}
+                  <span className="text-slate-500 dark:text-slate-400">LinkedIn:</span>{' '}
                   <a
                     href={siteData.contact.linkedin}
                     target="_blank"
@@ -183,9 +183,9 @@ export const ContactPage: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <p className="text-xs text-slate-400">
+            <p className="text-xs text-slate-500 dark:text-slate-400">
               This form is wired up for{' '}
-              <span className="font-semibold text-slate-200">Netlify Forms</span>. When you deploy
+              <span className="font-semibold text-slate-700 dark:text-slate-200">Netlify Forms</span>. When you deploy
               to Netlify, submissions will appear in your site&apos;s dashboard.
             </p>
           </aside>

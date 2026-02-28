@@ -11,16 +11,16 @@ export const HomePage: React.FC = () => {
       <PageTransition>
         <section className="grid gap-8 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] lg:items-center">
           <div className="space-y-6">
-            <p className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/60 px-3 py-1 text-[11px] text-slate-300 shadow-sm">
+            <p className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-slate-100 px-3 py-1 text-[11px] text-slate-600 shadow-sm dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-300">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
               <span>Available for internships &amp; projects</span>
             </p>
             <div className="space-y-3">
-              <h1 className="text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl lg:text-5xl">
+              <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl dark:text-slate-50">
                 Hi, I&apos;m {siteData.name}.
               </h1>
               <p className="text-lg font-medium text-primary/80">{siteData.heroTagline}</p>
-              <p className="max-w-xl text-sm leading-relaxed text-slate-200">
+              <p className="max-w-xl text-sm leading-relaxed text-slate-600 dark:text-slate-200">
                 {siteData.heroIntro}
               </p>
             </div>
@@ -38,14 +38,14 @@ export const HomePage: React.FC = () => {
           <div className="card relative overflow-hidden p-5">
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-emerald-500/10" />
             <div className="relative space-y-4">
-              <h2 className="text-sm font-semibold tracking-tight text-slate-50">
+              <h2 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-50">
                 Quick highlights
               </h2>
-              <div className="grid gap-3 text-xs text-slate-200 sm:grid-cols-2">
+              <div className="grid gap-3 text-xs text-slate-700 sm:grid-cols-2 dark:text-slate-200">
                 {siteData.heroHighlights.map((group) => (
                   <div
                     key={group.label}
-                    className="rounded-xl border border-slate-700/80 bg-slate-900/80 p-3"
+                    className="rounded-xl border border-slate-200 bg-slate-50/80 p-3 dark:border-slate-700/80 dark:bg-slate-900/80"
                   >
                     <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary/80">
                       {group.label}
@@ -58,7 +58,7 @@ export const HomePage: React.FC = () => {
                   </div>
                 ))}
               </div>
-              <p className="text-[11px] text-slate-400">
+              <p className="text-[11px] text-slate-500 dark:text-slate-400">
                 Explore more on the{' '}
                 <Link to="/about" className="text-primary hover:underline">
                   About
@@ -82,30 +82,30 @@ export const HomePage: React.FC = () => {
         />
         <div className="grid gap-4 sm:grid-cols-3">
           <div className="card p-4">
-            <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
               Languages
             </h3>
-            <ul className="mt-2 space-y-1 text-sm text-slate-200">
+            <ul className="mt-2 space-y-1 text-sm text-slate-700 dark:text-slate-200">
               {siteData.skills.languages.map((skill) => (
                 <li key={skill}>{skill}</li>
               ))}
             </ul>
           </div>
           <div className="card p-4">
-            <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
               Frameworks
             </h3>
-            <ul className="mt-2 space-y-1 text-sm text-slate-200">
+            <ul className="mt-2 space-y-1 text-sm text-slate-700 dark:text-slate-200">
               {siteData.skills.frameworks.map((skill) => (
                 <li key={skill}>{skill}</li>
               ))}
             </ul>
           </div>
           <div className="card p-4">
-            <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
               Tools
             </h3>
-            <ul className="mt-2 space-y-1 text-sm text-slate-200">
+            <ul className="mt-2 space-y-1 text-sm text-slate-700 dark:text-slate-200">
               {siteData.skills.tools.map((skill) => (
                 <li key={skill}>{skill}</li>
               ))}

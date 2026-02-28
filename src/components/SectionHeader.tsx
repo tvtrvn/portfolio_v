@@ -30,11 +30,13 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
           {eyebrow}
         </p>
       )}
-      <h1 className="text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl lg:text-4xl">
+      <h1 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl dark:text-slate-50">
         {title}
       </h1>
       {description && (
-        <p className="max-w-2xl text-sm leading-relaxed text-slate-300">{description}</p>
+        <p className="max-w-2xl text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+          {description}
+        </p>
       )}
     </header>
   );

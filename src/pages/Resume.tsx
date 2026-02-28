@@ -24,13 +24,13 @@ export const ResumePage: React.FC = () => {
             <Button href={resumeUrl} download variant="outline">
               Download resume
             </Button>
-            <p className="text-xs text-slate-400">
+            <p className="text-xs text-slate-500 dark:text-slate-400">
               Replace <code>public/{siteData.resume.fileName}</code> with your own PDF.
             </p>
           </div>
 
-          <div className="card overflow-hidden border-slate-800/90">
-            <div className="aspect-[8.5/11] w-full bg-slate-950/70">
+          <div className="card overflow-hidden border-slate-200 dark:border-slate-800/90">
+            <div className="aspect-[8.5/11] w-full bg-slate-100 dark:bg-slate-950/70">
               <iframe
                 title="Resume preview"
                 src={resumeUrl}
@@ -38,7 +38,7 @@ export const ResumePage: React.FC = () => {
                 loading="lazy"
               />
             </div>
-            <p className="border-t border-slate-800/80 px-4 py-2 text-[11px] text-slate-400">
+            <p className="border-t border-slate-200 px-4 py-2 text-[11px] text-slate-500 dark:border-slate-800/80 dark:text-slate-400">
               If the embedded PDF does not load, try using the &quot;Open PDF resume&quot; or
               &quot;Download&quot; buttons above.
             </p>
@@ -46,10 +46,10 @@ export const ResumePage: React.FC = () => {
         </section>
 
         <section className="space-y-3">
-          <h2 className="text-sm font-semibold tracking-tight text-slate-50">
+          <h2 className="text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-50">
             Text-based resume summary
           </h2>
-          <ul className="space-y-2 text-sm leading-relaxed text-slate-200">
+          <ul className="space-y-2 text-sm leading-relaxed text-slate-600 dark:text-slate-200">
             {siteData.resume.summary.map((item, index) => (
               <li key={index} className="flex gap-2">
                 <span

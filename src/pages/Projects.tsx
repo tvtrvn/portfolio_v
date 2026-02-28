@@ -41,9 +41,9 @@ export const ProjectsPage: React.FC = () => {
           description="A selection of projects that show how I approach problems, structure code, and design interfaces."
         />
 
-        <section className="flex flex-col gap-4 rounded-2xl border border-slate-800/80 bg-slate-950/70 p-4 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
+        <section className="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-slate-50/80 p-4 dark:border-slate-800/80 dark:bg-slate-950/70 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
           <div className="flex-1">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
               Filter by tech
             </p>
             <div className="mt-2 flex flex-wrap gap-1.5">
@@ -73,7 +73,7 @@ export const ProjectsPage: React.FC = () => {
 
         <section>
           {filteredProjects.length === 0 ? (
-            <p className="text-sm text-slate-300">
+            <p className="text-sm text-slate-600 dark:text-slate-300">
               No projects match your filters yet. Try clearing the search or choosing a different tag.
             </p>
           ) : (

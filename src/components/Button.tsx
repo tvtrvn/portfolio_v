@@ -35,9 +35,10 @@ const baseStyles =
 const variants: Record<ButtonVariant, string> = {
   primary:
     'bg-primary text-primary-foreground shadow-soft hover:bg-primary/90 focus-visible:ring-primary/80',
-  ghost: 'bg-transparent hover:bg-slate-800/70 text-slate-100 focus-visible:ring-slate-400/80',
+  ghost:
+    'bg-transparent text-slate-700 hover:bg-slate-100 focus-visible:ring-slate-400/80 dark:text-slate-100 dark:hover:bg-slate-800/70',
   outline:
-    'border border-slate-700 bg-slate-900/50 hover:bg-slate-800/80 text-slate-100 focus-visible:ring-primary/80'
+    'border border-slate-300 bg-white hover:bg-slate-50 text-slate-800 focus-visible:ring-primary/80 dark:border-slate-700 dark:bg-slate-900/50 dark:hover:bg-slate-800/80 dark:text-slate-100'
 };
 
 export const Button: React.FC<ButtonProps> = (props) => {

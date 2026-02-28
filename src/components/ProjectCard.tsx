@@ -13,8 +13,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <div className="space-y-3">
         <header className="flex items-start justify-between gap-2">
           <div>
-            <h3 className="text-base font-semibold text-slate-50">{project.title}</h3>
-            <p className="mt-1 text-xs text-slate-300">{project.description}</p>
+            <h3 className="text-base font-semibold text-slate-900 dark:text-slate-50">{project.title}</h3>
+            <p className="mt-1 text-xs text-slate-600 dark:text-slate-300">{project.description}</p>
           </div>
         </header>
 
