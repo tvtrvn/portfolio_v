@@ -30,7 +30,7 @@ export const siteData: SiteData = {
     ]
   },
   skills: {
-    languages: ['Python', 'C++', 'Java', 'SQL', 'NoSQL', 'TypeScript', 'JavaScript'],
+    languages: ['Python', 'C/C++', 'Java', 'SQL', 'NoSQL', 'TypeScript', 'JavaScript'],
     frameworks: ['React', 'Node.js', 'Express', 'Vite', 'Tailwind CSS', 'Next.js', 'Agile Methodologies'],
     tools: ['Git & GitHub', 'VS Code', 'Linux', 'Figma', 'Google Cloud Platform', 'Trello']
   },
