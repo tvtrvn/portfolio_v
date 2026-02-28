@@ -76,8 +76,8 @@ export const siteData: SiteData = {
         'This current portfolio site, built to practice modern frontend tooling, routing, and deployment pipelines.',
       tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Netlify'],
       links: [
-        { label: 'Live demo', href: 'https://example.com/portfolio-v1' },
-        { label: 'GitHub', href: 'https://github.com/tvtrvn/portfolio-v1' }
+        { label: 'Live demo', href: 'https://thinh-tran-portfoliosite.netlify.app/' },
+        { label: 'GitHub', href: 'https://github.com/tvtrvn/portfolio_v' }
       ],
       highlight: 'Deployed with Vite and Netlify. Uses React Router for navigation and Tailwind CSS for styling. Includes a contact form and a resume page.'
     }
