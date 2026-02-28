@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply min-h-screen bg-slate-950 bg-subtle-radial text-slate-100 antialiased;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;
+  }
+
+  ::selection {
+    @apply bg-primary/40 text-primary-foreground;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .card {
+    @apply rounded-2xl border border-slate-800/60 bg-slate-900/60 shadow-soft backdrop-blur-md;
+  }
+
+  .focus-ring {
+    @apply outline-none ring-2 ring-primary/70 ring-offset-2 ring-offset-slate-900;
+  }
+}
+
