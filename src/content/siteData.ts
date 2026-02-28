@@ -20,6 +20,10 @@ export const siteData: SiteData = {
     {
       label: 'Languages Spoken',
       items: ['English(Native)', 'French(Fluent)', 'Vietnamese(Advanced)']
+    },
+    {
+      label: 'Personal',
+      items: ['Raptors', 'Sports', 'Traveling', 'Weightlifting', 'Rock Climbing', 'Cooking']
     }
   ],
   about: {
@@ -32,7 +36,7 @@ export const siteData: SiteData = {
   skills: {
     languages: ['Python', 'C/C++', 'Java', 'SQL', 'NoSQL', 'TypeScript', 'JavaScript'],
     frameworks: ['React', 'Node.js', 'Express', 'Vite', 'Tailwind CSS', 'Next.js', 'Agile Methodologies'],
-    tools: ['Git & GitHub', 'VS Code', 'Linux', 'Figma', 'Google Cloud Platform', 'Trello']
+    tools: ['Git & GitHub', 'VS Code', 'Linux', 'ESP-IDF (CMake, Ninja, Build System, FreeRTOS)', 'Google Cloud Platform', 'Trello']
   },
   experience: [
     {
@@ -65,12 +69,21 @@ export const siteData: SiteData = {
       title: 'Algorithm Visualizer (In Progress)',
       description:
         'Interactive visualizations for classic algorithms such as sorting and pathfinding, built to strengthen CS fundamentals and help others learn.',
-      tech: ['React', 'TypeScript', 'Canvas', 'Algorithms'],
+      tech: [],
       links: [],
       highlight: 'In Progress'
     },
     {
       id: 'proj-3',
+      title: 'Anti-Procrastination App (In Progress)',
+      description:
+        'A Chrome extension app that helps users stay focused and productive by blocking distracting websites and apps. Built to help me stay focused on my goals and improve my productivity.',
+      tech: [],
+      links: [],
+      highlight: 'In Progress'
+    },
+    {
+      id: 'proj-4',
       title: 'Personal Portfolio Website',
       description:
         'This current portfolio site, built to practice modern frontend tooling, routing, and deployment pipelines.',
@@ -90,7 +103,7 @@ export const siteData: SiteData = {
   resume: {
     fileName: 'resume.pdf',
     summary: [
-      'B.Sc. in Computer Science (expected 2027) with coursework in data structures, algorithms, operating systems, databases, and software engineering.',
+      'B.A. in Computer Science (expected 2028) with coursework in data structures, algorithms, operating systems, databases, and software engineering.',
       'Experience building full-stack projects with React, TypeScript, Node.js, and SQL/NoSQL databases.',
       'Strong focus on code quality, version control, and collaborative workflows using Git and GitHub.'
     ]

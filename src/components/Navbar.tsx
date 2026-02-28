@@ -26,7 +26,7 @@ export const Navbar: React.FC = () => {
             className="flex items-center gap-2 text-sm font-semibold tracking-tight text-slate-900 dark:text-slate-50"
           >
             <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-primary text-[11px] font-bold text-primary-foreground shadow-soft">
-              CS
+              TT
             </span>
             <span className="hidden sm:inline">
               {siteData.name.split(' ')[0] || 'Portfolio'}
