@@ -62,15 +62,12 @@ export const siteData: SiteData = {
     },
     {
       id: 'proj-2',
-      title: 'Algorithm Visualizer',
+      title: 'Algorithm Visualizer (In Progress)',
       description:
         'Interactive visualizations for classic algorithms such as sorting and pathfinding, built to strengthen CS fundamentals and help others learn.',
       tech: ['React', 'TypeScript', 'Canvas', 'Algorithms'],
-      links: [
-        { label: 'Live demo', href: 'https://example.com/algovis' },
-        { label: 'GitHub', href: 'https://github.com/your-username/algovis' }
-      ],
-      highlight: 'Focuses on clear visuals, step-by-step playback, and explanations.'
+      links: [],
+      highlight: 'In Progress'
     },
     {
       id: 'proj-3',
@@ -99,7 +96,7 @@ export const siteData: SiteData = {
     ]
   },
   seo: {
-    title: 'Your Name — CS Student Portfolio',
+    title: 'Thinh Tran — CS Student Portfolio',
     description: 'Portfolio of a computer science student showcasing projects, skills, resume, and contact information.'
   }
 };
