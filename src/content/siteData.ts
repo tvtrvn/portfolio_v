@@ -56,7 +56,7 @@ export const siteData: SiteData = {
       id: 'proj-1',
       title: 'Music Video Analytics App',
       description:
-        'A web app that tracks the top most viewed music videos on YouTube in the Vietnam region.',
+        'A web app that tracks the top most viewed music videos on YouTube in the Vietnam region. More changes to be implemented.',
       tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'YouTube API (REST)', 'Vercel'],
       links: [
         { label: 'Live demo', href: 'https://first-repo-live.vercel.app/' },
@@ -75,18 +75,20 @@ export const siteData: SiteData = {
     },
     {
       id: 'proj-3',
-      title: 'Anti-Procrastination App (In Progress)',
+      title: 'Anti-Procrastination App',
       description:
-        'A Chrome extension app that helps users stay focused and productive by blocking distracting websites and apps. Built to help me stay focused on my goals and improve my productivity.',
-      tech: [],
-      links: [],
-      highlight: 'In Progress'
+        'A Chrome extension app that helps users stay focused and productive by blocking distracting websites and apps. Built to help me stay focused on my goals and improve my productivity. More changes to be implemented.',
+      tech: ['HTML', 'CSS', 'JavaScript', 'Chrome Extension API'],
+      links: [
+        { label: 'GitHub', href: 'https://github.com/tvtrvn/chrome-extension-anti-procrastination' }
+      ],
+      highlight: 'Includes an idle timer that when surpassed, opens a popup to McDonalds careers page to motivate me to stay focused.'
     },
     {
       id: 'proj-4',
       title: 'Personal Portfolio Website',
       description:
-        'This current portfolio site, built to practice modern frontend tooling, routing, and deployment pipelines.',
+        'This current portfolio site, built to practice modern frontend tooling, routing, and deployment pipelines. More changes to be implemented.',
       tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Netlify'],
       links: [
         { label: 'Live demo', href: 'https://thinh-tran-portfoliosite.netlify.app/' },
