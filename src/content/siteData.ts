@@ -57,7 +57,7 @@ export const siteData: SiteData = {
       title: 'Music Video Analytics App',
       description:
         'A web app that tracks the top most viewed music videos on YouTube in the Vietnam region. More changes to be implemented.',
-      tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'YouTube API (REST)', 'Vercel'],
+      tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'YouTube API (REST)', 'Vercel', 'MongoDB'],
       links: [
         { label: 'Live demo', href: 'https://first-repo-live.vercel.app/' },
         { label: 'GitHub', href: 'https://github.com/tvtrvn/first-repo-live' }
@@ -95,7 +95,16 @@ export const siteData: SiteData = {
         { label: 'GitHub', href: 'https://github.com/tvtrvn/portfolio_v' }
       ],
       highlight: 'Deployed with Vite and Netlify. Uses React Router for navigation and Tailwind CSS for styling. Includes a contact form and a resume page.'
-    }
+    },
+    {
+      id: 'proj-5',
+      title: 'Ginger Restaurant Ordering Website (In Progress)',
+      description:
+        'A website that allows users to order food from my family\'s restaurant online. More changes to be implemented.',
+      tech: [],
+      links: [],
+      highlight: 'In Progress'
+    },
   ],
   contact: {
     email: 'thinhvt99@gmail.com',
