@@ -185,8 +185,7 @@ export const ContactPage: React.FC = () => {
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400">
               This form is wired up for{' '}
-              <span className="font-semibold text-slate-700 dark:text-slate-200">Netlify Forms</span>. When you deploy
-              to Netlify, submissions will appear in your site&apos;s dashboard.
+              <span className="font-semibold text-slate-700 dark:text-slate-200">Netlify Forms</span>.
             </p>
           </aside>
         </div>

@@ -36,7 +36,7 @@ export const siteData: SiteData = {
   skills: {
     languages: ['Python', 'C/C++', 'Java', 'SQL', 'NoSQL', 'TypeScript', 'JavaScript'],
     frameworks: ['React', 'Node.js', 'Express', 'Vite', 'Tailwind CSS', 'Next.js', 'Agile Methodologies'],
-    tools: ['Git & GitHub', 'VS Code', 'Linux', 'ESP-IDF (CMake, Ninja, Build System, FreeRTOS)', 'Google Cloud Platform', 'Trello']
+    tools: ['Git & GitHub', 'VS Code', 'Linux','Stripe','MongoDB','Prisma', 'ESP-IDF (CMake, Ninja, Build System, FreeRTOS)', 'Google Cloud Platform', 'Trello']
   },
   experience: [
     {
@@ -54,6 +54,18 @@ export const siteData: SiteData = {
   projects: [
     {
       id: 'proj-1',
+      title: 'Ginger Cuisine – Restaurant Ordering Platform',
+      description:
+        'A full-stack restaurant ordering platform built for my family’s restaurant. Users can browse menu items, customize orders, and complete pickup checkout with Stripe payments. Currently expanding with a real-time kitchen order dashboard.',
+      tech: ['Next.js', 'TypeScript', 'Prisma', 'Stripe', 'MongoDB', 'Vercel','Tailwind CSS'],
+      links: [
+        { label: 'Live demo', href: 'https://gingercuisine-app.vercel.app/' },
+        { label: 'GitHub', href: 'https://github.com/tvtrvn/gingercuisine-app' }
+      ],
+      highlight: 'Includes secure Stripe payments, server-side order validation, and persistent order storage.'
+    },
+    {
+      id: 'proj-2',
       title: 'Music Video Analytics App',
       description:
         'A web app that tracks the top most viewed music videos on YouTube in the Vietnam region. More changes to be implemented.',
@@ -63,15 +75,6 @@ export const siteData: SiteData = {
         { label: 'GitHub', href: 'https://github.com/tvtrvn/first-repo-live' }
       ],
       highlight: 'Includes interactive hover to preview and a responsive dashboard layout.'
-    },
-    {
-      id: 'proj-2',
-      title: 'Algorithm Visualizer (In Progress)',
-      description:
-        'Interactive visualizations for classic algorithms such as sorting and pathfinding, built to strengthen CS fundamentals and help others learn.',
-      tech: [],
-      links: [],
-      highlight: 'In Progress'
     },
     {
       id: 'proj-3',
@@ -95,15 +98,6 @@ export const siteData: SiteData = {
         { label: 'GitHub', href: 'https://github.com/tvtrvn/portfolio_v' }
       ],
       highlight: 'Deployed with Vite and Netlify. Uses React Router for navigation and Tailwind CSS for styling. Includes a contact form and a resume page.'
-    },
-    {
-      id: 'proj-5',
-      title: 'Ginger Restaurant Ordering Website (In Progress)',
-      description:
-        'A website that allows users to order food from my family\'s restaurant online. More changes to be implemented.',
-      tech: [],
-      links: [],
-      highlight: 'In Progress'
     },
   ],
   contact: {

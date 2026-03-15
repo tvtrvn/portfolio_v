@@ -13,7 +13,7 @@ export const ResumePage: React.FC = () => {
         <SectionHeader
           eyebrow="Resume"
           title="Resume & experience"
-          description="View or download a PDF version of my resume. There’s also a text-based summary below as a fallback."
+          description="View or download a PDF version of my resume."
         />
 
         <section className="space-y-4">
@@ -25,7 +25,6 @@ export const ResumePage: React.FC = () => {
               Download resume
             </Button>
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              Replace <code>public/{siteData.resume.fileName}</code> with your own PDF.
             </p>
           </div>
 
