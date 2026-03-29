@@ -34,8 +34,8 @@ export const siteData: SiteData = {
     ]
   },
   skills: {
-    languages: ['Python', 'C/C++', 'Java', 'SQL', 'NoSQL', 'TypeScript', 'JavaScript'],
-    frameworks: ['React', 'Node.js', 'Express', 'Vite', 'Tailwind CSS', 'Next.js', 'Agile Methodologies'],
+    languages: ['Python', 'C/C++', 'Java', 'SQL', 'NoSQL', 'TypeScript', 'JavaScript', 'HTML/CSS'],
+    frameworks: ['Spring Boot', 'React','RESTful APIs', 'Node.js', 'Express', 'Vite', 'Tailwind CSS', 'Next.js', 'Agile Methodologies'],
     tools: ['Git & GitHub', 'VS Code', 'Linux','Stripe','MongoDB','Prisma', 'ESP-IDF (CMake, Ninja, Build System, FreeRTOS)', 'Google Cloud Platform', 'Trello']
   },
   experience: [
@@ -47,7 +47,7 @@ export const siteData: SiteData = {
       start: '2024',
       end: 'Present',
       description:
-        'Studying core CS topics including data structures, algorithms, operating systems, and software engineering while building side projects to apply concepts in practice. Relevant Coursework: Advanced Object-Oriented Programming, Data Structures & Algorithms, Computer Architecture& Organization, Software Tools, Database Management Systems, Software Design, Calculus I–II, Elementary Probability,Linear Algebra.'
+        'Studying core CS topics including data structures, algorithms, operating systems, and software engineering while building side projects to apply concepts in practice. Relevant Coursework: Advanced Object-Oriented Programming, Data Structures & Algorithms, Computer Architecture& Organization, Software Tools, Database Management Systems, Software Design, Calculus I–II, Elementary Probability, Linear Algebra.'
 
     },
   ],
@@ -69,7 +69,7 @@ export const siteData: SiteData = {
       title: 'Music Video Analytics App',
       description:
         'A web app that tracks the top most viewed music videos on YouTube in the Vietnam region. More changes to be implemented.',
-      tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'YouTube API (REST)', 'Vercel', 'MongoDB'],
+      tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'YouTube Data API', 'Vercel', 'MongoDB'],
       links: [
         { label: 'Live demo', href: 'https://first-repo-live.vercel.app/' },
         { label: 'GitHub', href: 'https://github.com/tvtrvn/first-repo-live' }
