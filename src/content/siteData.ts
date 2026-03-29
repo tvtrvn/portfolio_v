@@ -101,7 +101,7 @@ export const siteData: SiteData = {
     },
   ],
   contact: {
-    email: 'thinhvt99@gmail.com',
+    email: 'thinh@my.yorku.ca',
     github: 'https://github.com/tvtrvn',
     linkedin: 'https://www.linkedin.com/in/thinh-tran-111/'
   },
