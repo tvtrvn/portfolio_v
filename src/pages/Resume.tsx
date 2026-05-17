@@ -515,28 +515,6 @@ export const ResumePage: React.FC = () => {
           </section>
         </Reveal>
 
-        <Reveal>
-          <section className="border-t border-line pt-16">
-            <div className="grid gap-10 lg:grid-cols-[1.5fr_1fr] lg:items-center lg:gap-14">
-              <div>
-                <h2
-                  className="font-display text-3xl font-light tracking-tighter2 text-fg sm:text-4xl"
-                  style={{ textWrap: 'balance' }}
-                >
-                  Need this resume tailored to a role?
-                </h2>
-                <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-muted">
-                  I can have a tailored PDF in your inbox within 24 hours.
-                </p>
-              </div>
-              <div className="flex lg:justify-end">
-                <Button href={`mailto:${siteData.contact.email}`} variant="primary" size="lg" withArrow>
-                  Email me directly
-                </Button>
-              </div>
-            </div>
-          </section>
-        </Reveal>
       </div>
     </PageTransition>
   );
