@@ -5,32 +5,45 @@ interface BaseFieldProps {
   label: string;
   name: string;
   error?: string;
+  helper?: string;
   className?: string;
 }
 
 type InputProps = BaseFieldProps & React.InputHTMLAttributes<HTMLInputElement>;
 type TextareaProps = BaseFieldProps & React.TextareaHTMLAttributes<HTMLTextAreaElement>;
 
-export const TextInput: React.FC<InputProps> = ({ label, name, error, className, ...rest }) => {
+const fieldShellBase =
+  'rounded-2xl border border-line bg-elev px-4 py-3 text-[15px] text-fg placeholder:text-muted transition-all duration-500 ease-premium focus:border-amber-400/60 focus:bg-[color:var(--accent-soft)]/40 focus-ring';
+
+export const TextInput: React.FC<InputProps> = ({
+  label,
+  name,
+  error,
+  helper,
+  className,
+  ...rest
+}) => {
   const id = rest.id ?? name;
   return (
-    <div className={cn('flex flex-col gap-1', className)}>
-      <label htmlFor={id} className="text-xs font-medium text-slate-600 dark:text-slate-200">
+    <div className={cn('flex flex-col gap-2', className)}>
+      <label htmlFor={id} className="font-mono text-[10.5px] uppercase tracking-[0.22em] text-muted">
         {label}
       </label>
       <input
         id={id}
         name={name}
-        className={cn(
-          'rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm outline-none transition focus-visible:focus-ring dark:border-slate-700 dark:bg-slate-900/70 dark:text-slate-50',
-          error && 'border-red-500/80'
-        )}
+        className={cn(fieldShellBase, error && 'border-red-500/70 focus:border-red-500/70')}
         aria-invalid={Boolean(error)}
-        aria-describedby={error ? `${id}-error` : undefined}
+        aria-describedby={error ? `${id}-error` : helper ? `${id}-help` : undefined}
         {...rest}
       />
+      {helper && !error && (
+        <p id={`${id}-help`} className="text-xs text-muted">
+          {helper}
+        </p>
+      )}
       {error && (
-        <p id={`${id}-error`} className="text-xs text-red-400">
+        <p id={`${id}-error`} className="text-xs text-red-500" role="alert">
           {error}
         </p>
       )}
@@ -38,30 +51,43 @@ export const TextInput: React.FC<InputProps> = ({ label, name, error, className,
   );
 };
 
-export const TextArea: React.FC<TextareaProps> = ({ label, name, error, className, ...rest }) => {
+export const TextArea: React.FC<TextareaProps> = ({
+  label,
+  name,
+  error,
+  helper,
+  className,
+  ...rest
+}) => {
   const id = rest.id ?? name;
   return (
-    <div className={cn('flex flex-col gap-1', className)}>
-      <label htmlFor={id} className="text-xs font-medium text-slate-600 dark:text-slate-200">
+    <div className={cn('flex flex-col gap-2', className)}>
+      <label htmlFor={id} className="font-mono text-[10.5px] uppercase tracking-[0.22em] text-muted">
         {label}
       </label>
       <textarea
         id={id}
         name={name}
+        rows={5}
         className={cn(
-          'min-h-[120px] rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm outline-none transition focus-visible:focus-ring dark:border-slate-700 dark:bg-slate-900/70 dark:text-slate-50',
-          error && 'border-red-500/80'
+          fieldShellBase,
+          'min-h-[140px] resize-y leading-relaxed',
+          error && 'border-red-500/70 focus:border-red-500/70'
         )}
         aria-invalid={Boolean(error)}
-        aria-describedby={error ? `${id}-error` : undefined}
+        aria-describedby={error ? `${id}-error` : helper ? `${id}-help` : undefined}
         {...rest}
       />
+      {helper && !error && (
+        <p id={`${id}-help`} className="text-xs text-muted">
+          {helper}
+        </p>
+      )}
       {error && (
-        <p id={`${id}-error`} className="text-xs text-red-400">
+        <p id={`${id}-error`} className="text-xs text-red-500" role="alert">
           {error}
         </p>
       )}
     </div>
   );
 };
-

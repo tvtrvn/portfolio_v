@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion, useReducedMotion } from 'framer-motion';
 import { cn } from '../utils/cn';
 
 interface PageTransitionProps {
@@ -7,23 +8,15 @@ interface PageTransitionProps {
 }
 
 export const PageTransition: React.FC<PageTransitionProps> = ({ className, children }) => {
-  const [visible, setVisible] = React.useState(false);
-
-  React.useEffect(() => {
-    const id = window.setTimeout(() => setVisible(true), 10);
-    return () => window.clearTimeout(id);
-  }, []);
-
+  const reduce = useReducedMotion();
   return (
-    <div
-      className={cn(
-        'transition-all duration-500 ease-out',
-        visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2',
-        className
-      )}
+    <motion.div
+      className={cn(className)}
+      initial={{ opacity: 0, y: reduce ? 0 : 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, ease: [0.32, 0.72, 0, 1] }}
     >
       {children}
-    </div>
+    </motion.div>
   );
 };
-

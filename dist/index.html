@@ -9,29 +9,39 @@
         } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
           document.documentElement.classList.add('dark');
         } else {
-          document.documentElement.classList.add('light');
+          document.documentElement.classList.add('dark');
         }
       })();
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CS Student Portfolio</title>
+    <meta name="theme-color" content="#0B0B0E" />
+    <title>Thinh Tran — Software Engineer & CS Student</title>
     <meta
       name="description"
-      content="Personal portfolio of a computer science student showcasing projects, skills, and experience."
+      content="Portfolio of Thinh Tran — Computer Science student at York University. Full-stack engineer building production-grade web, mobile, and analytics platforms."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="CS Student Portfolio" />
+    <meta property="og:title" content="Thinh Tran — Software Engineer & CS Student" />
     <meta
       property="og:description"
-      content="Projects, resume, and contact information for a computer science student."
+      content="Selected work in full-stack web, fintech analytics, mobile, and developer tools."
     />
     <meta property="og:image" content="/favicon.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <script type="module" crossorigin src="/assets/index-Bn6pkmUK.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-45iC7FxC.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script type="module" crossorigin src="/assets/index-Cd2besJx.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C-giSBYD.css">
   </head>
   <body class="antialiased">
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-amber-400 focus:px-4 focus:py-2 focus:text-ink-900"
+    >
+      Skip to content
+    </a>
     <!-- Hidden form so Netlify detects it at build time (React form submits via JS) -->
     <form name="contact" method="POST" action="/" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
       <input type="hidden" name="form-name" value="contact" />
@@ -45,4 +55,3 @@
     <div id="root"></div>
   </body>
 </html>
-

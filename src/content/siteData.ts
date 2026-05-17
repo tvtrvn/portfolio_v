@@ -1,121 +1,410 @@
 import type { SiteData } from '../types/content';
 
 // All portfolio content lives here. Update this file to customize the site.
+// Synced with master_resume_2026-05-16/master_resume.pdf.
 export const siteData: SiteData = {
   name: 'Thinh Tran',
-  role: 'Computer Science Student',
+  role: 'Full-Stack Developer · CS Student',
   location: 'Toronto, Ontario, Canada',
-  heroTagline: 'Building thoughtful experiences with code.',
+  heroTagline:
+    'Shipping production-grade software end-to-end — from REST APIs and security hardening to data-driven frontends and mobile.',
   heroIntro:
-    "I'm a computer science student who enjoys turning ideas into reliable, user-friendly software. I focus on clean code, strong fundamentals, and learning something new with every project.",
+    'B.A. Computer Science (Honours) at York University, class of 2027. I build production-shape web apps, fintech analytics platforms, mobile apps, embedded firmware, and developer tools — with a bias toward shipping, testing, and design systems that hold up under real users.',
   heroHighlights: [
     {
-      label: 'Interests',
-      items: ['Web development', 'Systems', 'UI engineering', 'Cloud deployment', 'Software Engineering']
+      label: 'Currently',
+      items: [
+        'B.A. Computer Science (Honours) · York University · Sept 2023 – May 2027',
+        'Open to Fall 2026 + Winter / Summer 2027 co-op',
+      ],
+    },
+    {
+      label: 'Stacks I reach for',
+      items: [
+        'Next.js · React 18/19 · TypeScript',
+        'FastAPI · Spring Boot · Node.js',
+        'PostgreSQL · MongoDB · Prisma · Redis',
+      ],
     },
     {
       label: 'Currently learning',
-      items: ['Algorithms', 'Design systems', 'Cloud deployment', 'AI/ML', 'Web Development']
+      items: ['Distributed systems', 'WebGL / Canvas graphics', 'Quant finance & ML for time-series'],
     },
     {
-      label: 'Languages Spoken',
-      items: ['English(Native)', 'French(Fluent)', 'Vietnamese(Advanced)']
+      label: 'Off the keyboard',
+      items: ['Basketball', 'Volleyball', 'Rock climbing', 'Weightlifting', 'Cooking', 'EN · FR · VI'],
     },
-    {
-      label: 'Personal',
-      items: ['Raptors', 'Sports', 'Traveling', 'Weightlifting', 'Rock Climbing', 'Cooking']
-    }
   ],
   about: {
     paragraphs: [
-      "I'm a computer science student with a strong interest in web development and developer tools. I enjoy understanding how things work under the hood and writing code that is both clean and practical.",
-      'In my projects, I like to explore real-world problems: building responsive UIs, designing APIs, and deploying applications. I care about good UX, accessibility, and maintainable codebases.',
-      'Outside of classes, I learn by shipping projects, contributing to open source when I can, and reading about software architecture, distributed systems, and interface design.'
-    ]
+      "I'm a third-year B.A. Computer Science (Honours) student at York University, class of 2027, with a focus on full-stack engineering, fintech-grade analytics, and developer tools. I care about code that ships — well-tested, observable, and pleasant to work in six months from now.",
+      'My work spans full-stack web (Next.js + FastAPI), fintech analytics (Python + NumPy + Recharts), mobile (React Native + Expo), embedded firmware (ESP32-C3 in C + RISC-V Assembly), and Java systems work. The throughline: real users, real data, real infrastructure. I prefer building the boring scaffolding (rate limits, security headers, TTL cleanup crons, fallback chains) over chasing what is trendy.',
+      'I think design and engineering should not be separated. Every project I ship has a deliberate visual language, a typography scale, and motion that respects physics. I treat the UI layer with the same rigor as the backend.',
+      'Outside of school I help run a family Vietnamese restaurant (which is also the customer for my largest production app), work as an Inventory Management Associate at Aritzia Distribution Center, lift, climb, and watch every Raptors game.',
+    ],
   },
   skills: {
-    languages: ['Python', 'C/C++', 'Java', 'SQL', 'NoSQL', 'TypeScript', 'JavaScript', 'HTML/CSS'],
-    frameworks: ['Spring Boot', 'React','RESTful APIs', 'Node.js', 'Express', 'Vite', 'Tailwind CSS', 'Next.js', 'Agile Methodologies'],
-    tools: ['Git & GitHub', 'VS Code', 'Linux','Stripe','MongoDB','Prisma', 'ESP-IDF (CMake, Ninja, Build System, FreeRTOS)', 'Google Cloud Platform', 'Trello']
+    languages: [
+      'TypeScript',
+      'JavaScript',
+      'Python',
+      'Java',
+      'C / C++',
+      'C# (Basic)',
+      'SQL',
+      'HTML / CSS',
+    ],
+    frameworks: [
+      'Next.js 16 (App Router)',
+      'React 18 / 19',
+      'React Native (Expo SDK 54)',
+      'FastAPI',
+      'Spring Boot · Spring Data JPA',
+      'Node.js',
+      'Tailwind CSS',
+      'Framer Motion',
+      'Redux Toolkit',
+      'Recharts · NumPy · Pandas',
+      'Prisma 6 · SQLAlchemy 2.0 · Alembic',
+      'React Hook Form · Zod · Pydantic v2',
+      'JavaFX · JUnit · Pytest',
+      'Zustand · Gradle · Upstash Ratelimit · Resend',
+    ],
+    tools: [
+      'Git · GitHub · GitHub Actions',
+      'Docker · Linux / CLI · ESLint',
+      'Vercel · Koyeb · Neon · Netlify',
+      'Expo / EAS · Chrome Manifest V3',
+      'Microsoft Office 365 (Excel, PowerPoint, Word, SharePoint)',
+      'PostgreSQL · MongoDB · Redis / Upstash · SQLite',
+      'MySQL · Microsoft SQL Server · Azure SQL / Cosmos DB',
+      'ESP-IDF (CMake · Ninja · FreeRTOS) on ESP32-C3',
+    ],
   },
   experience: [
     {
-      id: 'exp-1',
-      role: 'Computer Science Student',
+      id: 'exp-yorku',
+      role: 'B.A. Computer Science (Honours)',
       company: 'York University',
-      location: 'Toronto, Ontario, Canada',
-      start: '2024',
+      location: 'Toronto, Ontario',
+      start: 'Sept 2023',
+      end: 'May 2027 (expected)',
+      description:
+        'Relevant coursework: Data Structures & Algorithms, Computer Architecture & Organization, Database Management Systems, Software Design Patterns, Object-Oriented Programming, Software Tools, Discrete Mathematics, Applied Linear Algebra, Probability. Shipping production projects alongside coursework to apply each concept against real users and real infrastructure.',
+    },
+    {
+      id: 'exp-pho-ginger',
+      role: 'Full Stack Developer (On Call)',
+      company: 'Pho Ginger',
+      location: 'Toronto, Ontario',
+      start: 'Mar 2026',
       end: 'Present',
       description:
-        'Studying core CS topics including data structures, algorithms, operating systems, and software engineering while building side projects to apply concepts in practice. Relevant Coursework: Advanced Object-Oriented Programming, Data Structures & Algorithms, Computer Architecture& Organization, Software Tools, Database Management Systems, Software Design, Calculus I–II, Elementary Probability, Linear Algebra.'
-
+        'Sole developer of a production ordering platform with a customer storefront and private staff tablet dashboard (Next.js 16, TypeScript, React 19, Tailwind v4, MongoDB Atlas, Prisma 6, Vercel). Shipped 9 typed REST API routes with Zod schema validation and server-side order-total recomputation. Implemented HMAC-SHA256 signed HttpOnly session cookies (12h TTL) with constant-time comparison, per-order 128-bit viewToken to prevent confirmation-page enumeration, Upstash sliding-window rate limits across 5 endpoints, CSRF validation, and a hardened header set (HSTS preload, X-Frame-Options DENY, nosniff, Permissions-Policy). Executed a Stripe-removal refactor — deleted ~600 lines with zero downtime — and authored a 270-line PRD plus full README.',
+    },
+    {
+      id: 'exp-aritzia',
+      role: 'Inventory Management Associate',
+      company: 'Aritzia Distribution Center',
+      location: 'Vaughan, Ontario',
+      start: 'Apr 2025',
+      end: 'Present',
+      description:
+        'Operating warehouse management systems (WMS), barcode scanning, and Excel/CSV reporting for precise stock control in a high-volume distribution environment. Manage real-time inventory tracking, SKU accuracy, and stock reconciliation; implemented cycle counting, variance reporting, and quality checks to keep data integrity intact across stored goods. Scaling inventory processes as volume increases.',
     },
   ],
   projects: [
     {
-      id: 'proj-1',
-      title: 'Ginger Cuisine – Restaurant Ordering Platform',
+      id: 'proj-portfolio-analytics',
+      title: 'Portfolio Analytics Dashboard',
+      tagline: 'Institutional-grade asset-management terminal — solo build.',
       description:
-        'A full-stack restaurant ordering platform built for my family’s restaurant. Users can browse menu items, customize orders, and complete pickup checkout with Stripe payments. Currently expanding with a real-time kitchen order dashboard.',
-      tech: ['Next.js', 'TypeScript', 'Prisma', 'Stripe', 'MongoDB', 'Vercel','Tailwind CSS'],
-      links: [
-        { label: 'Live demo', href: 'https://gingercuisine-app.vercel.app/' },
-        { label: 'GitHub', href: 'https://github.com/tvtrvn/gingercuisine-app' }
+        'Full-stack portfolio analytics platform monitoring 4 simulated portfolios (~$700M AUM). Built solo with React 18 + TypeScript + Redux Toolkit (4 slices) + Recharts (5 chart types) + Vite 5 on the frontend, Python 3.11 + FastAPI + SQLAlchemy 2.0 + Pydantic v2 on the backend. Designed an 8-table normalized PostgreSQL schema with 6 composite indexes and shipped 10 REST API endpoints serving portfolio summaries, holdings, performance series, attribution, risk metrics, and benchmark comparison. The analytics engine is pure NumPy — 11 financial metrics from first principles (Sharpe ratio, max drawdown, VaR / CVaR, tracking error, beta, annualized volatility), seeded with geometric Brownian motion across 34 securities and ~850 trading days.',
+      tech: [
+        'React 18',
+        'TypeScript',
+        'Redux Toolkit',
+        'Recharts',
+        'Vite 5',
+        'Tailwind CSS',
+        'Python 3.11',
+        'FastAPI',
+        'SQLAlchemy 2.0',
+        'Pydantic v2',
+        'NumPy',
+        'PostgreSQL',
+        'Koyeb',
+        'Vercel',
       ],
-      highlight: 'Includes secure Stripe payments, server-side order validation, and persistent order storage.'
+      links: [
+        { label: 'GitHub', href: 'https://github.com/tvtrvn/portfolio-analytics-dashboard-app' },
+      ],
+      highlight:
+        '4 portfolios · ~$700M sample AUM · 8-table schema, 6 composite indexes · 10 endpoints · 11 metrics from first principles · 34 securities over 850 trading days.',
+      year: '2026',
+      role: 'Sole engineer',
+      status: 'shipped',
+      kind: 'fullstack',
+      featured: true,
+      metrics: [
+        { label: 'API endpoints', value: '10' },
+        { label: 'Financial metrics', value: '11' },
+        { label: 'Sample AUM', value: '~$700M' },
+      ],
     },
     {
-      id: 'proj-2',
-      title: 'Music Video Analytics App',
+      id: 'proj-historical-trade-sim',
+      title: 'Historical Trade Scenario Simulator',
+      tagline: 'Replay any investment decision against real historical price data.',
       description:
-        'A web app that tracks the top most viewed music videos on YouTube in the Vietnam region. More changes to be implemented.',
-      tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'YouTube Data API', 'Vercel', 'MongoDB'],
-      links: [
-        { label: 'Live demo', href: 'https://first-repo-live.vercel.app/' },
-        { label: 'GitHub', href: 'https://github.com/tvtrvn/first-repo-live' }
+        'A trade simulator for lump-sum and dollar-cost-averaging scenarios with benchmark overlays, drawdown chart, per-year return bars, and a full trade ledger. Built with Vite 5, React 18, TypeScript, Tailwind 3, Framer Motion 11, FastAPI, and PostgreSQL 16. Implemented a tiered market-data fallback chain (Tiingo → Yahoo Finance → synthetic GBM) and defense-in-depth middleware: per-IP rate limiting (120 req/min), 64KB body cap, 100 saved-scenarios cap, 30-day TTL cleanup, and a bearer-token-protected maintenance route. 76 passing tests across 4 suites (finance unit, security end-to-end, maintenance, market-data); automated a daily GitHub Actions cron for price refresh + TTL cleanup; enforced HSTS, X-Frame-Options, COOP/CORP, and `no-store` on all API routes.',
+      tech: [
+        'Vite 5',
+        'React 18',
+        'TypeScript',
+        'Tailwind 3',
+        'Framer Motion 11',
+        'Recharts',
+        'FastAPI',
+        'Python 3.11',
+        'SQLAlchemy 2.0',
+        'Alembic',
+        'PostgreSQL 16',
+        'Neon',
+        'Koyeb',
+        'Vercel',
+        'GitHub Actions',
       ],
-      highlight: 'Includes interactive hover to preview and a responsive dashboard layout.'
+      links: [
+        { label: 'GitHub', href: 'https://github.com/tvtrvn/historical-trade-sim-app' },
+      ],
+      highlight:
+        '76 tests passing · 3-tier market-data fallback · daily TTL cleanup cron · runs forever on free tiers.',
+      year: '2025–2026',
+      role: 'Designer + sole engineer',
+      status: 'shipped',
+      kind: 'fullstack',
+      featured: true,
+      metrics: [
+        { label: 'Backend tests', value: '76' },
+        { label: 'Tickers seeded', value: '12' },
+        { label: 'Security middlewares', value: '7' },
+      ],
     },
     {
-      id: 'proj-3',
-      title: 'Anti-Procrastination App',
+      id: 'proj-ginger',
+      title: 'Pho Ginger — Pickup Ordering Platform',
+      tagline: 'Real Vietnamese restaurant. Real customers. Real money.',
       description:
-        'A Chrome extension app that helps users stay focused and productive by blocking distracting websites and apps. Built to help me stay focused on my goals and improve my productivity. More changes to be implemented.',
-      tech: ['HTML', 'CSS', 'JavaScript', 'Chrome Extension API'],
-      links: [
-        { label: 'GitHub', href: 'https://github.com/tvtrvn/chrome-extension-anti-procrastination' }
+        'A mobile-first Next.js 16 ordering site running production for a family-owned restaurant. Customers browse, customize, and place pay-in-person pickup orders; staff manage a live Kanban dashboard on a tablet. 9 typed REST API routes with Zod schema validation, server-side order-total recomputation (clients never send prices), HMAC-SHA256 signed HttpOnly session cookies, per-order 128-bit viewToken, Upstash Redis rate limits on every public endpoint, CSRF on every state-changing request, and a Vercel cron heartbeat to keep the Atlas free tier from auto-pausing.',
+      tech: [
+        'Next.js 16',
+        'TypeScript',
+        'React 19',
+        'Tailwind CSS v4',
+        'MongoDB Atlas',
+        'Prisma 6',
+        'Resend',
+        'Upstash Redis',
+        'Vercel',
+        'Zod',
       ],
-      highlight: 'Includes an idle timer that when surpassed, opens a popup to McDonalds careers page to motivate me to stay focused.'
+      links: [
+        { label: 'Live site', href: 'https://gingercuisine-app.vercel.app/' },
+        { label: 'GitHub', href: 'https://github.com/tvtrvn/gingercuisine-app' },
+      ],
+      highlight:
+        'Live in a real restaurant. Polling kitchen dashboard, repeating audio alarm, pause-ordering control, full security model.',
+      year: '2024–2026',
+      role: 'Sole engineer',
+      status: 'live',
+      kind: 'fullstack',
+      featured: true,
+      metrics: [
+        { label: 'REST routes', value: '9' },
+        { label: 'Rate-limited endpoints', value: '5' },
+        { label: 'Stripe LOC removed', value: '~600' },
+      ],
     },
     {
-      id: 'proj-4',
-      title: 'Personal Portfolio Website',
+      id: 'proj-fridgefit',
+      title: 'FridgeFit — iOS & Android App',
+      tagline: 'Flip the recipe app. Start with the fridge, end with dinner.',
       description:
-        'This current portfolio site, built to practice modern frontend tooling, routing, and deployment pipelines. More changes to be implemented.',
-      tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Netlify'],
-      links: [
-        { label: 'Live demo', href: 'https://thinh-tran-portfoliosite.netlify.app/' },
-        { label: 'GitHub', href: 'https://github.com/tvtrvn/portfolio_v' }
+        'Cross-platform mobile app built with Expo SDK 54, React Native 0.81, React 19, TypeScript, and Expo Router (file-based navigation). State managed via Zustand, local persistence via Expo SQLite, forms via React Hook Form + Zod. Add what is in your fridge; recipes are ranked by ingredient-match against TheMealDB; filter for vegetarian, vegan, gluten-free, dairy-free, nut-free; save favorites and plan meals on a calendar. Scaffold, design system, navigation, and Fridge tab UI shipped (M1). EAS Build + EAS Submit pipeline configured for App Store / Google Play distribution.',
+      tech: [
+        'Expo SDK 54',
+        'React Native 0.81',
+        'React 19',
+        'TypeScript',
+        'Expo Router',
+        'Zustand',
+        'Expo SQLite',
+        'React Hook Form',
+        'Zod',
+        'TheMealDB API',
+        'USDA FoodData',
+        'EAS Build',
       ],
-      highlight: 'Deployed with Vite and Netlify. Uses React Router for navigation and Tailwind CSS for styling. Includes a contact form and a resume page.'
+      links: [
+        { label: 'GitHub', href: 'https://github.com/tvtrvn/FridgeFit-app' },
+      ],
+      highlight:
+        'First mobile app — full design system, offline-first SQLite, file-based routing, EAS Build pipeline.',
+      year: '2026',
+      role: 'Designer + mobile engineer',
+      status: 'in-progress',
+      kind: 'mobile',
+      featured: true,
+    },
+    {
+      id: 'proj-youtube-vpop',
+      title: 'Top 50 Vietnamese Pop Videos — YouTube Viewer',
+      tagline: 'Daily-snapshot leaderboard of vpop on YouTube.',
+      description:
+        'Next.js 16 App Router app displaying the top 100 most-viewed long-form Vietnamese pop music videos on YouTube (25 per page). Integrates YouTube Data API v3 with two parallel search queries (English + Vietnamese), videos.list enrichment in batches of 50, and ISO 8601 duration filtering to strip Shorts. Implements a MongoDB daily-snapshot cache with a 30-day TTL index to auto-prune stale data; designed quota-aware API usage (~1010 YouTube units per cold load) to stay within the 10,000-unit free daily quota.',
+      tech: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'MongoDB', 'YouTube Data API v3', 'Vercel'],
+      links: [
+        { label: 'Live site', href: 'https://first-repo-live.vercel.app/' },
+        { label: 'GitHub', href: 'https://github.com/tvtrvn/first-repo-live' },
+      ],
+      highlight: '~1010 YouTube quota units / cold load · TTL-indexed snapshot cache.',
+      year: '2025',
+      role: 'Sole engineer',
+      status: 'shipped',
+      kind: 'fullstack',
+    },
+    {
+      id: 'proj-procrastination',
+      title: 'Anti-Procrastination Chrome Extension',
+      tagline: 'Focus session, AFK nudge, site blocker — all in one MV3 extension.',
+      description:
+        'Manifest V3 Chrome extension in vanilla HTML / CSS / JavaScript. Blocks distracting sites via declarativeNetRequest dynamic rules and runs focus sessions with AFK idle detection (chrome.idle, 120 s threshold). Timer uses chrome.alarms for service-worker resilience; data persisted via chrome.storage.local. After 120 s AFK, opens a single nudge tab.',
+      tech: [
+        'JavaScript',
+        'HTML',
+        'CSS',
+        'Chrome Manifest V3',
+        'declarativeNetRequest',
+        'chrome.alarms',
+        'chrome.idle',
+        'chrome.storage',
+      ],
+      links: [
+        { label: 'GitHub', href: 'https://github.com/tvtrvn/chrome-extension-anti-procrastination' },
+      ],
+      highlight: 'Service worker–driven timer survives popup close · session capped at 3 hr.',
+      year: '2025',
+      role: 'Sole engineer',
+      status: 'shipped',
+      kind: 'extension',
+    },
+    {
+      id: 'proj-connect-four',
+      title: 'Connect Four — EECS3311 Software Design',
+      tagline: 'MVC, Strategy, Factory, and Command patterns from the ground up.',
+      description:
+        'Java MVC game with separated model, view, and controller layers; applied Observer, Strategy, Factory, and Command design patterns for a maintainable, extensible architecture. Wrote JUnit unit and integration tests covering board rules, invalid moves, save / load, and undo / redo. Coordinated development using Git / GitHub, Trello, user stories, and Agile-style sprints.',
+      tech: [
+        'Java',
+        'JavaFX',
+        'JUnit',
+        'MVC',
+        'Observer Pattern',
+        'Strategy Pattern',
+        'Factory Pattern',
+        'Command Pattern',
+        'Git',
+        'Trello',
+      ],
+      links: [
+        { label: 'GitHub', href: 'https://github.com/tvtrvn/connect-four-javafx' },
+      ],
+      highlight: 'Hand-rolled Command stack for undo / redo · runtime-swappable Strategy AI.',
+      year: '2025',
+      role: 'Coursework + extensions',
+      status: 'shipped',
+      kind: 'systems',
+    },
+    {
+      id: 'proj-esp32',
+      title: 'ESP32-C3 Embedded LED Firmware',
+      tagline: 'WS2812 LED firmware in C + RISC-V Assembly on FreeRTOS.',
+      description:
+        'Programmed firmware for an ESP32-C3 development board controlling WS2812 addressable LEDs in C and RISC-V Assembly with FreeRTOS. Implemented hardware timing control at the cycle level, set up the build with ESP-IDF (CMake / Ninja), and debugged the deployment on a physical development board. First exposure to embedded systems work — bare-metal timing, peripheral configuration, and tight memory budgets.',
+      tech: [
+        'C',
+        'RISC-V Assembly',
+        'FreeRTOS',
+        'ESP-IDF',
+        'CMake',
+        'Ninja',
+        'WS2812',
+        'ESP32-C3',
+      ],
+      links: [],
+      highlight: 'Cycle-accurate WS2812 timing on bare ESP32-C3 hardware.',
+      year: '2025',
+      role: 'Sole developer',
+      status: 'shipped',
+      kind: 'systems',
+    },
+    {
+      id: 'proj-portfolio',
+      title: 'This Portfolio',
+      tagline: 'Editorial-grade portfolio. Custom design system. No template.',
+      description:
+        'The site you are reading. Vite + React + TypeScript + Tailwind v3 with a hand-built design system: warm bone-on-charcoal palette, Fraunces + Geist + JetBrains Mono typography stack, custom cubic-bezier motion, animated canvas mesh-blob hero, magnetic CTAs, spotlight project cards, floating dock navbar, and a fixed grain overlay. Deployed on Netlify.',
+      tech: ['Vite', 'React 18', 'TypeScript', 'Tailwind CSS 3', 'Framer Motion 11', 'Phosphor Icons', 'Netlify'],
+      links: [
+        { label: 'Live site', href: 'https://thinh-tran-portfoliosite.netlify.app/' },
+        { label: 'GitHub', href: 'https://github.com/tvtrvn/portfolio_v' },
+      ],
+      highlight: 'Hand-built design system · animated canvas hero · custom motion choreography.',
+      year: '2026',
+      role: 'Designer + engineer',
+      status: 'live',
+      kind: 'frontend',
+    },
+  ],
+  certifications: [
+    {
+      id: 'cert-design-patterns',
+      title: 'Mastering Design Patterns with Java',
+      issuer: 'CodeSignal',
+      date: 'Apr 2026',
+      description:
+        'Creational, Structural & Behavioral patterns — Singleton, Factory Method, Builder, Adapter, Decorator, Composite, Observer, Strategy, Command.',
+    },
+    {
+      id: 'cert-spring-boot',
+      title: 'Spring Boot REST API with Java & Gradle',
+      issuer: 'CodeSignal',
+      date: 'May 2026',
+      description:
+        'Spring Core, Dependency Injection, REST Controllers, Spring Data JPA, entity relationships, pagination & sorting.',
     },
   ],
   contact: {
-    email: 'thinh@my.yorku.ca',
+    email: 'thinhvt99@gmail.com',
+    phone: '+1 (647) 515-7345',
     github: 'https://github.com/tvtrvn',
-    linkedin: 'https://www.linkedin.com/in/thinh-tran-111/'
+    linkedin: 'https://www.linkedin.com/in/thinh-tran111/',
   },
   resume: {
     fileName: 'resume.pdf',
     summary: [
-      'B.A. in Computer Science (expected 2028) with coursework in data structures, algorithms, operating systems, databases, and software engineering.',
-      'Experience building full-stack projects with React, TypeScript, Node.js, and SQL/NoSQL databases.',
-      'Strong focus on code quality, version control, and collaborative workflows using Git and GitHub.'
-    ]
+      'B.A. Computer Science (Honours) · York University · Sept 2023 – May 2027 (expected).',
+      'Full-stack developer shipping production-grade web apps end-to-end — from REST API design and security hardening to data-driven frontends and mobile builds.',
+      'Shipped 9 production-shape projects spanning full-stack web, fintech analytics (NumPy + FastAPI + Recharts), mobile (React Native + Expo), embedded firmware (ESP32-C3 in C + RISC-V Assembly), Chrome extensions, and Java systems work.',
+      'Strong testing instincts — 76 backend tests on the Historical Trade Simulator, defense-in-depth security middleware on every production endpoint, JUnit on Java work.',
+      'CodeSignal-certified: Mastering Design Patterns with Java (Apr 2026), Spring Boot REST API with Java & Gradle (May 2026).',
+      'Languages: TypeScript, JavaScript, Python, Java, C / C++, C# (Basic), SQL, HTML / CSS. Spoken: English (native), French (fluent), Vietnamese (advanced).',
+    ],
   },
   seo: {
-    title: 'Thinh Tran — CS Student Portfolio',
-    description: 'Portfolio of a computer science student showcasing projects, skills, resume, and contact information.'
-  }
+    title: 'Thinh Tran — Full-Stack Developer & CS Student',
+    description:
+      'Portfolio of Thinh Tran. Full-stack web, fintech analytics, mobile, embedded firmware, and developer tools. B.A. Computer Science (Honours) at York University, class of 2027.',
+  },
 };
-

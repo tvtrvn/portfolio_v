@@ -21,13 +21,23 @@ export interface ProjectLink {
   href: string;
 }
 
+export type ProjectStatus = 'shipped' | 'in-progress' | 'archived' | 'live';
+export type ProjectKind = 'fullstack' | 'frontend' | 'mobile' | 'extension' | 'data' | 'systems';
+
 export interface Project {
   id: string;
   title: string;
+  tagline: string;
   description: string;
   tech: string[];
   links?: ProjectLink[];
   highlight?: string;
+  year: string;
+  role: string;
+  status: ProjectStatus;
+  kind: ProjectKind;
+  featured?: boolean;
+  metrics?: { label: string; value: string }[];
 }
 
 export interface HeroHighlight {
@@ -47,8 +57,18 @@ export interface ResumeConfig {
 
 export interface ContactConfig {
   email: string;
+  phone?: string;
   github: string;
   linkedin: string;
+}
+
+export interface Certification {
+  id: string;
+  title: string;
+  issuer: string;
+  date: string;
+  description?: string;
+  verifyUrl?: string;
 }
 
 export interface SiteData {
@@ -64,8 +84,8 @@ export interface SiteData {
   skills: SkillGroups;
   experience: ExperienceItem[];
   projects: Project[];
+  certifications: Certification[];
   contact: ContactConfig;
   resume: ResumeConfig;
   seo: SeoConfig;
 }
-

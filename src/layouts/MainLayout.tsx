@@ -1,6 +1,7 @@
 import React from 'react';
 import { Footer } from '../components/Footer';
 import { Navbar } from '../components/Navbar';
+import { NoiseOverlay } from '../components/visual/NoiseOverlay';
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -8,11 +9,13 @@ interface MainLayoutProps {
 
 export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="relative flex min-h-[100dvh] flex-col bg-surface text-fg">
+      <NoiseOverlay />
       <Navbar />
-      <main className="container-page flex-1 py-8 sm:py-10 lg:py-12">{children}</main>
+      <main id="main-content" className="flex-1 pt-24 sm:pt-28">
+        {children}
+      </main>
       <Footer />
     </div>
   );
 };
-
