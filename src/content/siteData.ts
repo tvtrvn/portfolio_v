@@ -145,9 +145,9 @@ export const siteData: SiteData = {
       featured: true,
       starred: true,
       metrics: [
+        { label: 'Daily customers', value: '100+' },
         { label: 'REST routes', value: '9' },
         { label: 'Rate-limited endpoints', value: '5' },
-        { label: 'Stripe LOC removed', value: '~600' },
       ],
     },
     {
