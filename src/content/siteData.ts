@@ -115,6 +115,42 @@ export const siteData: SiteData = {
   ],
   projects: [
     {
+      id: 'proj-ginger',
+      title: 'Pho Ginger — Pickup Ordering Platform',
+      tagline: 'Real Vietnamese restaurant. Real customers. Real money.',
+      description:
+        'A mobile-first Next.js 16 ordering site running production for a family-owned restaurant. Customers browse, customize, and place pay-in-person pickup orders; staff manage a live Kanban dashboard on a tablet. 9 typed REST API routes with Zod schema validation, server-side order-total recomputation (clients never send prices), HMAC-SHA256 signed HttpOnly session cookies, per-order 128-bit viewToken, Upstash Redis rate limits on every public endpoint, CSRF on every state-changing request, and a Vercel cron heartbeat to keep the Atlas free tier from auto-pausing.',
+      tech: [
+        'Next.js 16',
+        'TypeScript',
+        'React 19',
+        'Tailwind CSS v4',
+        'MongoDB Atlas',
+        'Prisma 6',
+        'Resend',
+        'Upstash Redis',
+        'Vercel',
+        'Zod',
+      ],
+      links: [
+        { label: 'Live site', href: 'https://gingercuisine-app.vercel.app/' },
+        { label: 'GitHub', href: 'https://github.com/tvtrvn/gingercuisine-app' },
+      ],
+      highlight:
+        'Live in a real restaurant. Polling kitchen dashboard, repeating audio alarm, pause-ordering control, full security model.',
+      year: '2024–2026',
+      role: 'Sole engineer',
+      status: 'live',
+      kind: 'fullstack',
+      featured: true,
+      starred: true,
+      metrics: [
+        { label: 'REST routes', value: '9' },
+        { label: 'Rate-limited endpoints', value: '5' },
+        { label: 'Stripe LOC removed', value: '~600' },
+      ],
+    },
+    {
       id: 'proj-portfolio-analytics',
       title: 'Portfolio Analytics Dashboard',
       tagline: 'Institutional-grade asset-management terminal — solo build.',
@@ -189,41 +225,6 @@ export const siteData: SiteData = {
         { label: 'Backend tests', value: '76' },
         { label: 'Tickers seeded', value: '12' },
         { label: 'Security middlewares', value: '7' },
-      ],
-    },
-    {
-      id: 'proj-ginger',
-      title: 'Pho Ginger — Pickup Ordering Platform',
-      tagline: 'Real Vietnamese restaurant. Real customers. Real money.',
-      description:
-        'A mobile-first Next.js 16 ordering site running production for a family-owned restaurant. Customers browse, customize, and place pay-in-person pickup orders; staff manage a live Kanban dashboard on a tablet. 9 typed REST API routes with Zod schema validation, server-side order-total recomputation (clients never send prices), HMAC-SHA256 signed HttpOnly session cookies, per-order 128-bit viewToken, Upstash Redis rate limits on every public endpoint, CSRF on every state-changing request, and a Vercel cron heartbeat to keep the Atlas free tier from auto-pausing.',
-      tech: [
-        'Next.js 16',
-        'TypeScript',
-        'React 19',
-        'Tailwind CSS v4',
-        'MongoDB Atlas',
-        'Prisma 6',
-        'Resend',
-        'Upstash Redis',
-        'Vercel',
-        'Zod',
-      ],
-      links: [
-        { label: 'Live site', href: 'https://gingercuisine-app.vercel.app/' },
-        { label: 'GitHub', href: 'https://github.com/tvtrvn/gingercuisine-app' },
-      ],
-      highlight:
-        'Live in a real restaurant. Polling kitchen dashboard, repeating audio alarm, pause-ordering control, full security model.',
-      year: '2024–2026',
-      role: 'Sole engineer',
-      status: 'live',
-      kind: 'fullstack',
-      featured: true,
-      metrics: [
-        { label: 'REST routes', value: '9' },
-        { label: 'Rate-limited endpoints', value: '5' },
-        { label: 'Stripe LOC removed', value: '~600' },
       ],
     },
     {

@@ -37,6 +37,13 @@ export interface Project {
   status: ProjectStatus;
   kind: ProjectKind;
   featured?: boolean;
+  /**
+   * Marks this project as the portfolio's flagship / hero project.
+   * The starred project is always sorted first across every surface
+   * (Home hero, Projects archive, Resume grid). Use sparingly — ideally
+   * only one project carries this flag at a time.
+   */
+  starred?: boolean;
   metrics?: { label: string; value: string }[];
 }
 

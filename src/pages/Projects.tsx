@@ -23,6 +23,7 @@ import { SpotlightCard } from '../components/visual/SpotlightCard';
 import { siteData } from '../content/siteData';
 import type { Project, ProjectKind, ProjectStatus } from '../types/content';
 import { cn } from '../utils/cn';
+import { sortStarredFirst } from '../utils/sortProjects';
 
 const KIND_LABELS: Record<ProjectKind, string> = {
   fullstack: 'Full-stack',
@@ -72,11 +73,6 @@ function primaryProjectLink(project: Project) {
   );
 }
 
-function yearSortKey(year: string): number {
-  const nums = year.match(/\d{4}/g)?.map((n) => Number.parseInt(n, 10)) ?? [0];
-  return Math.max(...nums);
-}
-
 export const ProjectsPage: React.FC = () => {
   const projects = siteData.projects;
   const [activeKind, setActiveKind] = useState<string>('All');
@@ -93,9 +89,8 @@ export const ProjectsPage: React.FC = () => {
   const stats = useMemo(() => {
     const total = projects.length;
     const liveProd = projects.filter((p) => p.status === 'live').length;
-    const featured = projects.filter((p) => p.featured).length;
     const mobileExt = projects.filter((p) => p.kind === 'mobile' || p.kind === 'extension').length;
-    return { total, liveProd, featured, mobileExt };
+    return { total, liveProd, mobileExt };
   }, [projects]);
 
   const filtered = useMemo(() => {
@@ -110,12 +105,7 @@ export const ProjectsPage: React.FC = () => {
         `${project.title} ${project.description} ${project.tech.join(' ')} ${project.tagline}`.toLowerCase();
       return hay.includes(q);
     });
-    return [...list].sort((a, b) => {
-      const af = a.featured ? 1 : 0;
-      const bf = b.featured ? 1 : 0;
-      if (bf !== af) return bf - af;
-      return yearSortKey(b.year) - yearSortKey(a.year);
-    });
+    return sortStarredFirst(list);
   }, [projects, activeKind, activeTech, query]);
 
   const isDirty = activeKind !== 'All' || activeTech !== 'All' || query !== '';
@@ -145,7 +135,7 @@ export const ProjectsPage: React.FC = () => {
           {[
             { value: stats.total, label: 'Total' },
             { value: stats.liveProd, label: 'Live in production' },
-            { value: stats.featured, label: 'Featured' },
+            { value: 1, label: 'Flagship · Pho Ginger' },
             { value: stats.mobileExt, label: 'Mobile + extension' },
           ].map((cell) => (
             <div key={cell.label} className="flex flex-col gap-1 px-4 first:pl-0 last:pr-0 md:px-6">

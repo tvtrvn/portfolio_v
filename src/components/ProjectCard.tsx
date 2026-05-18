@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight } from '@phosphor-icons/react';
+import { ArrowUpRight, Star } from '@phosphor-icons/react';
 import type { Project } from '../types/content';
 import { SpotlightCard } from './visual/SpotlightCard';
 import { Tag } from './Tag';
@@ -36,7 +36,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, classN
       coreClassName="p-6 sm:p-7 lg:p-8 flex flex-col gap-6 h-full"
     >
       <header className="flex items-start justify-between gap-4">
-        <div className="flex items-center gap-3 text-muted">
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-muted">
           {typeof index === 'number' && (
             <span className="font-mono text-[10.5px] tabular tracking-[0.22em]">
               {String(index).padStart(2, '0')} /
@@ -48,6 +48,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, classN
           >
             {status.label}
           </span>
+          {project.starred && (
+            <span className="inline-flex items-center gap-1 rounded-full border border-amber-400/55 bg-amber-400/10 px-2 py-0.5 font-mono text-[9.5px] uppercase tracking-[0.18em] text-amber-300">
+              <Star weight="fill" className="h-2.5 w-2.5" aria-hidden />
+              Flagship
+            </span>
+          )}
         </div>
         {primary && (
           <a

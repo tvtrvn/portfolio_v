@@ -16,6 +16,7 @@ import { Button } from '../components/Button';
 import { Tag } from '../components/Tag';
 import { siteData } from '../content/siteData';
 import type { ExperienceItem, Project } from '../types/content';
+import { sortStarredFirst } from '../utils/sortProjects';
 
 const RESUME_PUBLIC_PDF = `https://thinh-tran-portfoliosite.netlify.app/${siteData.resume.fileName}`;
 
@@ -58,7 +59,7 @@ export const ResumePage: React.FC = () => {
 
   const educationEntries = siteData.experience.filter(isEducationEntry);
   const otherExperience = siteData.experience.filter((e) => !isEducationEntry(e));
-  const featuredProjects = siteData.projects.filter((p) => p.featured);
+  const featuredProjects = sortStarredFirst(siteData.projects.filter((p) => p.featured));
 
   const mailtoShare = `mailto:${siteData.contact.email}?subject=${encodeURIComponent(`Resume — ${siteData.name}`)}&body=${encodeURIComponent(`Here is the link to my resume: ${RESUME_PUBLIC_PDF}`)}`;
 

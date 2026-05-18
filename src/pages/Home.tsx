@@ -18,6 +18,7 @@ import CanvasMeshBlob from '../components/visual/CanvasMeshBlob';
 import { Reveal, StaggerGroup, StaggerItem } from '../components/visual/Reveal';
 import { SpotlightCard } from '../components/visual/SpotlightCard';
 import { siteData } from '../content/siteData';
+import { sortStarredFirst } from '../utils/sortProjects';
 
 const techMarqueeItems = [
   'TypeScript',
@@ -48,7 +49,7 @@ const techMarqueeItems = [
 ];
 
 export const HomePage: React.FC = () => {
-  const featured = siteData.projects.filter((p) => p.featured);
+  const featured = sortStarredFirst(siteData.projects.filter((p) => p.featured));
   const featuredTop = featured[0];
   const featuredRest = featured.slice(1, 4);
 
@@ -250,12 +251,12 @@ export const HomePage: React.FC = () => {
             eyebrow="Selected work"
             title={
               <>
-                Four projects I&apos;m
+                My flagship,
                 <br />
-                proud to put my name on.
+                and the work around it.
               </>
             }
-            description="Each one shipped against real users, real data, or real assignment deadlines. Click through for the full set on the Work page."
+            description="Pho Ginger is the project I'm proudest of — live in a real restaurant, real customers, real money. Below it: three more I'm putting my name on."
           />
         </Reveal>
 
