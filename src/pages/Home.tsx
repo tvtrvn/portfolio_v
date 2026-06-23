@@ -66,7 +66,7 @@ export const HomePage: React.FC = () => {
                   <span className="absolute inline-flex h-full w-full animate-pulse-dot rounded-full bg-green-400" />
                   <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-green-400" />
                 </span>
-                Available · Fall 2026 co-op
+                Available · Summer 2027 co-op
               </span>
               <span className="font-mono text-[10.5px] uppercase tracking-[0.22em] text-muted">
                 <MapPin weight="regular" className="-mt-0.5 mr-1 inline-block h-3 w-3" />
@@ -182,7 +182,7 @@ export const HomePage: React.FC = () => {
                 </span>
                 <span className="rounded-full border border-line bg-ink-900/40 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.18em] text-fg/80 backdrop-blur">
                   <Lightning weight="fill" className="mr-1.5 inline-block h-3 w-3 text-amber-400" />
-                  live: gingercuisine.app
+                  live: gingercuisine.ca
                 </span>
               </div>
 

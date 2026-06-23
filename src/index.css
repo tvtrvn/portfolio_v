@@ -141,6 +141,9 @@
   .text-fg {
     color: var(--fg);
   }
+  .bg-fg {
+    background-color: var(--fg);
+  }
   .text-muted {
     color: var(--fg-muted);
   }

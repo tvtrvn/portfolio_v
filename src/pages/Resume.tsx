@@ -129,7 +129,7 @@ export const ResumePage: React.FC = () => {
                       <span className="font-mono text-[10.5px] uppercase tracking-[0.18em] text-muted">
                         Format
                       </span>
-                      <span className="text-fg">PDF · 1 page</span>
+                      <span className="text-fg">PDF · 2 pages</span>
                     </div>
                     <div className="flex flex-wrap items-center justify-between gap-3 py-4">
                       <span className="font-mono text-[10.5px] uppercase tracking-[0.18em] text-muted">

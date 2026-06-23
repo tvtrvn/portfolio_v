@@ -105,7 +105,7 @@ export const AboutPage: React.FC = () => {
                   <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-muted tabular">Availability</p>
                   <p className="mt-1.5 flex items-start gap-2.5 text-[15px] text-fg">
                     <Briefcase className="mt-0.5 h-5 w-5 shrink-0 text-accent" weight="duotone" aria-hidden />
-                    <span>Open to Fall 2026 co-op</span>
+                    <span>Available for Summer 2027 co-op</span>
                   </p>
                 </div>
                 <div>

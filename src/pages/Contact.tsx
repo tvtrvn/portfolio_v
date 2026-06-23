@@ -486,7 +486,7 @@ export const ContactPage: React.FC = () => {
                     When can you start?
                   </p>
                   <p className="mt-2 text-sm leading-relaxed text-muted">
-                    Open to Fall 2026 and Winter / Summer 2027 co-op terms.
+                    Available for Summer 2027 co-op terms.
                   </p>
                 </div>
               </div>

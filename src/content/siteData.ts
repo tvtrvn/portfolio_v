@@ -15,7 +15,7 @@ export const siteData: SiteData = {
       label: 'Currently',
       items: [
         'B.A. Computer Science (Honours) · York University · Sept 2023 – May 2027',
-        'Open to Fall 2026 + Winter / Summer 2027 co-op',
+        'Available for Summer 2027 co-op',
       ],
     },
     {
@@ -119,7 +119,7 @@ export const siteData: SiteData = {
       title: 'Pho Ginger — Pickup Ordering Platform',
       tagline: 'Real Vietnamese restaurant. Real customers. Real money.',
       description:
-        'A mobile-first Next.js 16 ordering site running production for a family-owned restaurant. Customers browse, customize, and place pay-in-person pickup orders; staff manage a live Kanban dashboard on a tablet. 9 typed REST API routes with Zod schema validation, server-side order-total recomputation (clients never send prices), HMAC-SHA256 signed HttpOnly session cookies, per-order 128-bit viewToken, Upstash Redis rate limits on every public endpoint, CSRF on every state-changing request, and a Vercel cron heartbeat to keep the Atlas free tier from auto-pausing.',
+        'A mobile-first Next.js 16 ordering site running production for a family-owned restaurant. Customers browse, customize, and place pay-in-person pickup orders; staff manage a live Kanban dashboard on a tablet. 13 typed REST API routes with Zod schema validation, server-side order-total recomputation (clients never send prices), HMAC-SHA256 signed HttpOnly session cookies, per-order 128-bit viewToken, Upstash Redis rate limits on every public endpoint, CSRF on every state-changing request, and a Vercel cron heartbeat to keep the Atlas free tier from auto-pausing.',
       tech: [
         'Next.js 16',
         'TypeScript',
@@ -133,7 +133,7 @@ export const siteData: SiteData = {
         'Zod',
       ],
       links: [
-        { label: 'Live site', href: 'https://gingercuisine-app.vercel.app/' },
+        { label: 'Live site', href: 'https://gingercuisine.ca/' },
         { label: 'GitHub', href: 'https://github.com/tvtrvn/gingercuisine-app' },
       ],
       highlight:
@@ -145,8 +145,8 @@ export const siteData: SiteData = {
       featured: true,
       starred: true,
       metrics: [
-        { label: 'Daily customers', value: '100+' },
-        { label: 'REST routes', value: '9' },
+        { label: 'Daily customers', value: '50+' },
+        { label: 'REST routes', value: '13' },
         { label: 'Rate-limited endpoints', value: '5' },
       ],
     },
@@ -155,7 +155,7 @@ export const siteData: SiteData = {
       title: 'Portfolio Analytics Dashboard',
       tagline: 'Institutional-grade asset-management terminal — solo build.',
       description:
-        'Full-stack portfolio analytics platform monitoring 4 simulated portfolios (~$700M AUM). Built solo with React 18 + TypeScript + Redux Toolkit (4 slices) + Recharts (5 chart types) + Vite 5 on the frontend, Python 3.11 + FastAPI + SQLAlchemy 2.0 + Pydantic v2 on the backend. Designed an 8-table normalized PostgreSQL schema with 6 composite indexes and shipped 10 REST API endpoints serving portfolio summaries, holdings, performance series, attribution, risk metrics, and benchmark comparison. The analytics engine is pure NumPy — 11 financial metrics from first principles (Sharpe ratio, max drawdown, VaR / CVaR, tracking error, beta, annualized volatility), seeded with geometric Brownian motion across 34 securities and ~850 trading days.',
+        'Full-stack portfolio analytics platform monitoring 4 simulated portfolios across 34 securities and 10 sectors. Built solo with React 18 + TypeScript + Redux Toolkit (4 slices) + Recharts (5 chart types) + Vite 5 on the frontend, Python 3.11 + FastAPI + SQLAlchemy 2.0 + Pydantic v2 on the backend. Designed an 8-table normalized PostgreSQL schema with 6 composite indexes and shipped 10 REST API endpoints serving portfolio summaries, holdings, performance series, attribution, risk metrics, and benchmark comparison. The analytics engine is pure NumPy — 11 financial metrics from first principles (Sharpe ratio, max drawdown, VaR / CVaR, tracking error, beta, annualized volatility), seeded with geometric Brownian motion across 34 securities and ~850 trading days.',
       tech: [
         'React 18',
         'TypeScript',
@@ -176,7 +176,7 @@ export const siteData: SiteData = {
         { label: 'GitHub', href: 'https://github.com/tvtrvn/portfolio-analytics-dashboard-app' },
       ],
       highlight:
-        '4 portfolios · ~$700M sample AUM · 8-table schema, 6 composite indexes · 10 endpoints · 11 metrics from first principles · 34 securities over 850 trading days.',
+        '4 portfolios · 34 securities across 10 sectors · 8-table schema, 6 composite indexes · 10 endpoints · 11 metrics from first principles · ~850 trading days.',
       year: '2026',
       role: 'Sole engineer',
       status: 'shipped',
@@ -185,7 +185,7 @@ export const siteData: SiteData = {
       metrics: [
         { label: 'API endpoints', value: '10' },
         { label: 'Financial metrics', value: '11' },
-        { label: 'Sample AUM', value: '~$700M' },
+        { label: 'Securities', value: '34' },
       ],
     },
     {
