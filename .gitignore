@@ -1,1 +1,11 @@
-.gitnexus
+node_modules/
+dist/
+build/
+.next/
+.vite/
+.DS_Store
+.env
+.env.*
+.gitnexus/
+.claude/settings.local.json
+.claude/skills/gitnexus/

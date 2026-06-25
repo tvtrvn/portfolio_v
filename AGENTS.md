@@ -42,6 +42,13 @@ This project is indexed by GitNexus as **portfolio_v** (418 symbols, 658 relatio
 
 <!-- gitnexus:end -->
 
+## Project rules
+
+- **Purpose:** Editorial-grade React + Vite + TypeScript personal portfolio (no template), with a hand-built design system and Framer Motion choreography.
+- **Layout:** `src/` · `public/` · `index.html` · `vite.config.ts` / `tailwind.config.ts` / `postcss.config.cjs`
+- **Build / test:** `npm run dev` (Vite dev server) · `npm run build` (Vite production build) · `npm run preview` (preview the build). No test script.
+- **Do / don't:** Don't commit `node_modules/` or `dist/` (gitignored). Don't introduce template defaults (Inter, generic gradients) — preserve the custom design system. Global coding standards live in `~/.claude/CLAUDE.md`.
+
 <!-- skills:start -->
 ## Available Skills
 
