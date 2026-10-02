@@ -33,7 +33,6 @@ const techMarqueeItems = [
   'Spring Boot',
   'React Native',
   'JavaFX',
-  'Stripe',
   'Resend',
   'Upstash',
   'Vercel',
@@ -116,12 +115,12 @@ export const HomePage: React.FC = () => {
 
             <div className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-line pt-6 text-muted">
               <div>
-                <p className="font-display text-2xl font-light tabular text-fg">9</p>
+                <p className="font-display text-2xl font-light tabular text-fg">{siteData.projects.filter((p) => p.status !== 'in-progress').length}</p>
                 <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.18em]">Shipped projects</p>
               </div>
               <div>
                 <p className="font-display text-2xl font-light tabular text-fg">76</p>
-                <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.18em]">Backend tests</p>
+                <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.18em]">Trade Sim tests</p>
               </div>
               <div>
                 <p className="font-display text-2xl font-light tabular text-fg">2027</p>
@@ -178,7 +177,7 @@ export const HomePage: React.FC = () => {
               <div className="pointer-events-none absolute right-5 top-5 flex flex-col items-end gap-2 text-right">
                 <span className="rounded-full border border-line bg-ink-900/40 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.18em] text-fg/80 backdrop-blur">
                   <CircleNotch weight="bold" className="mr-1.5 inline-block h-3 w-3 animate-spin-slow" />
-                  building · ginger v2.4
+                  on call · pho ginger
                 </span>
                 <span className="rounded-full border border-line bg-ink-900/40 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.18em] text-fg/80 backdrop-blur">
                   <Lightning weight="fill" className="mr-1.5 inline-block h-3 w-3 text-amber-400" />
@@ -195,7 +194,7 @@ export const HomePage: React.FC = () => {
                 }}
               >
                 <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-fg/60">
-                  Now compiling
+                  Featured build
                 </p>
                 <p className="mt-2 font-display text-[28px] font-light leading-[1.05] tracking-tighter2 text-fg">
                   Historical Trade
@@ -204,7 +203,7 @@ export const HomePage: React.FC = () => {
                 </p>
                 <div className="mt-3 flex items-center justify-between font-mono text-[10.5px] tabular text-fg/70">
                   <span>76 tests · pass</span>
-                  <span className="text-amber-400">v0.8.2</span>
+                  <span className="text-amber-400">12 tickers</span>
                 </div>
               </div>
             </div>
@@ -256,7 +255,7 @@ export const HomePage: React.FC = () => {
                 and the work around it.
               </>
             }
-            description="Pho Ginger is the project I'm proudest of — live in a real restaurant, real customers, real money. Below it: three more I'm putting my name on."
+            description="Pho Ginger is the project I'm proudest of — live in my family's restaurant, real customers, real orders. Below it: three more I'm putting my name on."
           />
         </Reveal>
 

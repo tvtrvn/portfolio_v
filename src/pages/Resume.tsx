@@ -55,7 +55,7 @@ export const ResumePage: React.FC = () => {
   const lastUpdatedLabel = new Intl.DateTimeFormat('en-US', {
     month: 'long',
     year: 'numeric',
-  }).format(new Date());
+  }).format(new Date(2026, 9, 1)); // date public/resume.pdf was last refreshed — update with the PDF
 
   const educationEntries = siteData.experience.filter(isEducationEntry);
   const otherExperience = siteData.experience.filter((e) => !isEducationEntry(e));

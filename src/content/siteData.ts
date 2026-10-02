@@ -1,20 +1,21 @@
 import type { SiteData } from '../types/content';
 
 // All portfolio content lives here. Update this file to customize the site.
-// Synced with master_resume_2026-05-16/master_resume.pdf.
+// Synced with master_resume_2026-10-01/master_resume.pdf (refreshed 2026-10-01).
 export const siteData: SiteData = {
   name: 'Thinh Tran',
   role: 'Full-Stack Developer · CS Student',
   location: 'Toronto, Ontario, Canada',
   heroTagline:
-    'Shipping production-grade software end-to-end — from REST APIs and security hardening to data-driven frontends and mobile.',
+    'Shipping production-grade software end-to-end — from REST APIs and security hardening to e-learning, analytics and AI-agent automation.',
   heroIntro:
-    'B.A. Computer Science (Honours) at York University, class of 2027. I build production-shape web apps, fintech analytics platforms, mobile apps, embedded firmware, and developer tools — with a bias toward shipping, testing, and design systems that hold up under real users.',
+    'Computer Science co-op student at York University (expected 2027), currently a Learning Technology & AI Enablement Intern at Groupe Bel Canada. I ship production web apps, AI-agent automation, e-learning technology and analytics for real organizations — with a bias toward shipping, testing, and work that holds up under real users.',
   heroHighlights: [
     {
       label: 'Currently',
       items: [
-        'B.A. Computer Science (Honours) · York University · Sept 2023 – May 2027',
+        'Learning Technology & AI Enablement Intern · Groupe Bel Canada',
+        'B.A. Computer Science (Honours), Co-op · York University · Sep 2024 – Expected 2027',
         'Available for Summer 2027 co-op',
       ],
     },
@@ -37,10 +38,10 @@ export const siteData: SiteData = {
   ],
   about: {
     paragraphs: [
-      "I'm a third-year B.A. Computer Science (Honours) student at York University, class of 2027, with a focus on full-stack engineering, fintech-grade analytics, and developer tools. I care about code that ships — well-tested, observable, and pleasant to work in six months from now.",
-      'My work spans full-stack web (Next.js + FastAPI), fintech analytics (Python + NumPy + Recharts), mobile (React Native + Expo), embedded firmware (ESP32-C3 in C + RISC-V Assembly), and Java systems work. The throughline: real users, real data, real infrastructure. I prefer building the boring scaffolding (rate limits, security headers, TTL cleanup crons, fallback chains) over chasing what is trendy.',
-      'I think design and engineering should not be separated. Every project I ship has a deliberate visual language, a typography scale, and motion that respects physics. I treat the UI layer with the same rigor as the backend.',
-      'Outside of school I help run a family Vietnamese restaurant (which is also the customer for my largest production app), work as an Inventory Management Associate at Aritzia Distribution Center, lift, climb, and watch every Raptors game.',
+      "I'm a B.A. Computer Science (Honours) co-op student at York University, expected to graduate in 2027, focused on full-stack engineering, analytics, and AI-agent automation. I care about code that ships — well-tested, observable, and pleasant to work in six months from now.",
+      "Right now I'm a Learning Technology & AI Enablement Intern at Groupe Bel Canada, building SCORM e-learning for the company's learning platform and a weekly-refreshed Power BI learning-engagement report the team uses. Over the summer I owned the Florida-expansion web workstream at Swimingo through Riipen Labs, and I'm the on-call developer for Pho Ginger, my family's Vietnamese restaurant, and its live ordering platform.",
+      'My own projects span full-stack web (Next.js + FastAPI), portfolio analytics (Python + NumPy + Recharts), mobile (React Native + Expo), embedded firmware (ESP32-C3 in C + RISC-V Assembly), and Java coursework. I prefer building the boring scaffolding (rate limits, security headers, TTL cleanup crons, fallback chains) over chasing what is trendy, and I build with Claude Code agent teams: I design and direct the work, and separate validator agents check it before it ships.',
+      'I think design and engineering should not be separated. Every web project I ship has a deliberate visual language, a typography scale, and motion that respects physics. I treat the UI layer with the same rigor as the backend.',
     ],
   },
   skills: {
@@ -52,6 +53,7 @@ export const siteData: SiteData = {
       'C / C++',
       'C# (Basic)',
       'SQL',
+      'DAX',
       'HTML / CSS',
     ],
     frameworks: [
@@ -67,7 +69,8 @@ export const siteData: SiteData = {
       'Recharts · NumPy · Pandas',
       'Prisma 6 · SQLAlchemy 2.0 · Alembic',
       'React Hook Form · Zod · Pydantic v2',
-      'JavaFX · JUnit · Pytest',
+      'Playwright · Vitest · Pytest · JUnit',
+      'JavaFX',
       'Zustand · Gradle · Upstash Ratelimit · Resend',
     ],
     tools: [
@@ -75,22 +78,56 @@ export const siteData: SiteData = {
       'Docker · Linux / CLI · ESLint',
       'Vercel · Koyeb · Neon · Netlify',
       'Expo / EAS · Chrome Manifest V3',
-      'Microsoft Office 365 (Excel, PowerPoint, Word, SharePoint)',
+      'Claude Code agent orchestration · MCP · Microsoft Copilot',
+      'Power BI (DAX, Power Query)',
+      'SCORM 2004 / 1.2 · SCORM Cloud · LMS administration',
+      'Google Search Console · JSON-LD / Schema.org · sitemaps',
+      'Microsoft 365 (Excel, PowerPoint, Word, SharePoint) · Adobe Premiere Pro',
       'PostgreSQL · MongoDB · Redis / Upstash · SQLite',
       'MySQL · Microsoft SQL Server · Azure SQL / Cosmos DB',
-      'ESP-IDF (CMake · Ninja · FreeRTOS) on ESP32-C3',
+      'FreeRTOS on ESP32-C3',
     ],
   },
   experience: [
     {
       id: 'exp-yorku',
-      role: 'B.A. Computer Science (Honours)',
+      role: 'B.A. Computer Science (Honours), Co-op',
       company: 'York University',
       location: 'Toronto, Ontario',
-      start: 'Sept 2023',
-      end: 'May 2027 (expected)',
+      start: 'Sep 2024',
+      end: 'Expected 2027',
       description:
-        'Relevant coursework: Data Structures & Algorithms, Computer Architecture & Organization, Database Management Systems, Software Design Patterns, Object-Oriented Programming, Software Tools, Discrete Mathematics, Applied Linear Algebra, Probability. Shipping production projects alongside coursework to apply each concept against real users and real infrastructure.',
+        'Co-op program; first work term at Groupe Bel Canada, Fall 2026. Relevant coursework: Data Structures & Algorithms, Computer Organization (A+), Database Systems, Software Design (UML, requirements, SDLC), Professional Practice in Computing (A), Software Tools. Prior study: Western University (2021–2024), including a year of media studies with hands-on Adobe Premiere Pro coursework.',
+    },
+    {
+      id: 'exp-bel',
+      role: 'Learning Technology & AI Enablement Intern',
+      company: 'Groupe Bel Canada',
+      location: 'Mississauga, Ontario (Hybrid)',
+      start: 'Jul 2026',
+      end: 'Present',
+      description:
+        "Orchestrated Claude Code agent teams with independent validators to build 30+ SCORM e-learning packages for the company's global learning academy, including 18 capability courses now live on the corporate LMS. Fixed a quiz-export defect that marked low scorers \"failed\" and kept them from completing a learning pathway: traced it in the package, rewrote its LMS reporting for SCORM 2004 so a below-pass attempt stays open for retry, and proved both paths on a real SCORM engine. Restored full learner tracking after finding that replacement quizzes sent the LMS less data than the packages they replaced. Built and maintain a Power BI report (10 pages, 72 DAX measures) tracking learning engagement for a 1,769-person community across ~18,000 activity records, used by the team and refreshed weekly, after auditing the LMS export and catching a sign-in total inflated 35×. Building a two-hour, demo-led Microsoft Copilot workshop for the team (delivering Oct 19, 2026), and rebuilt 2.4 hours of recorded system-training webinars into an 8-module narrated, subtitled video series (release pending).",
+    },
+    {
+      id: 'exp-swimingo',
+      role: 'SEO & Web Developer',
+      company: 'Swimingo (via Riipen Labs)',
+      location: 'Remote',
+      start: 'Jul 2026',
+      end: 'Sep 2026',
+      description:
+        "Owned the Florida-expansion web workstream end to end, shipping 14 Florida pages (a hub, 11 town pages and 2 instructor-recruitment pages, live at swimingo.com/swim-lessons/fl) into the company's React / TypeScript / Vite codebase across 6 merged pull requests: routing, prerendering, sitemaps, JSON-LD structured data, canonicals and a boundary-checked internal-linking mesh. Took the first six Florida pages from 0 to 310 Google search impressions, with Cooper City on page one (average position 8.6) about five weeks after launch. Diagnosed a wrong-address indexing leak (17.5% of impressions at baseline, 6.9% by the end) and added build gates that require a unique title, description and single canonical on every public route and fail the build on unsupported claims or bad structured data, each proven by injecting the fault it guards against.",
+    },
+    {
+      id: 'exp-upnxxt',
+      role: 'Technical Lead',
+      company: 'UpNxxt (via Riipen Labs)',
+      location: 'Remote',
+      start: 'Jun 2026',
+      end: 'Jun 2026',
+      description:
+        "Operations / Technical Lead on a 5-person team in a three-week sprint for an edtech startup teaching AI literacy to children. Authored Playwright browser-automation scripts to walk the product's signup and lesson flow as a real user, scraping the DOM to measure on-screen word count as a proxy for drop-off risk. Identified the first one or two lessons as the highest-leverage friction point and recommended an interactive, age-segmented redesign grounded in UNESCO, Nielsen Norman Group and cognitive-load research. Delivered a 17-slide customer-experience optimization report, owning 5 slides and generating the deck with python-pptx so it rebuilt after every edit.",
     },
     {
       id: 'exp-pho-ginger',
@@ -100,7 +137,7 @@ export const siteData: SiteData = {
       start: 'Mar 2026',
       end: 'Present',
       description:
-        'Sole developer of a production ordering platform with a customer storefront and private staff tablet dashboard (Next.js 16, TypeScript, React 19, Tailwind v4, MongoDB Atlas, Prisma 6, Vercel). Shipped 9 typed REST API routes with Zod schema validation and server-side order-total recomputation. Implemented HMAC-SHA256 signed HttpOnly session cookies (12h TTL) with constant-time comparison, per-order 128-bit viewToken to prevent confirmation-page enumeration, Upstash sliding-window rate limits across 5 endpoints, CSRF validation, and a hardened header set (HSTS preload, X-Frame-Options DENY, nosniff, Permissions-Policy). Executed a Stripe-removal refactor — deleted ~600 lines with zero downtime — and authored a 270-line PRD plus full README.',
+        'Built and maintain a production ordering platform serving about 50 customers a day, as sole developer orchestrating Claude Code agents: customer storefront and private staff tablet dashboard in Next.js 16, TypeScript, React 19, Tailwind v4, MongoDB Atlas, Prisma 6 and Vercel. Developed 13 typed REST API routes with Zod validation and server-side recomputation of every order total, eliminating client-side price tampering. Hardened the platform with HMAC-SHA256 signed HttpOnly session cookies, Upstash Redis sliding-window rate limits on 5 endpoints, CSRF origin checks and HSTS / security headers; cleared ~19 security advisories in a July 2026 dependency upgrade. Shipped owner-editable menu management (sold-out toggles, price overrides, photo uploads) and a background new-order alarm (desktop) the owner accepted in testing; a 22-test Playwright end-to-end suite checks that menu edits reach the storefront and sold-out orders are rejected.',
     },
     {
       id: 'exp-aritzia',
@@ -108,18 +145,18 @@ export const siteData: SiteData = {
       company: 'Aritzia Distribution Center',
       location: 'Vaughan, Ontario',
       start: 'Apr 2025',
-      end: 'Present',
+      end: 'Aug 2026',
       description:
-        'Operating warehouse management systems (WMS), barcode scanning, and Excel/CSV reporting for precise stock control in a high-volume distribution environment. Manage real-time inventory tracking, SKU accuracy, and stock reconciliation; implemented cycle counting, variance reporting, and quality checks to keep data integrity intact across stored goods. Scaling inventory processes as volume increases.',
+        'Managed real-time inventory tracking, SKU accuracy and stock reconciliation in a high-volume distribution environment using warehouse management systems (WMS) and barcode scanning. Maintained data integrity through cycle counting, variance reporting, quality checks and Excel/CSV reporting, scaling inventory processes as volume increased.',
     },
   ],
   projects: [
     {
       id: 'proj-ginger',
       title: 'Pho Ginger — Pickup Ordering Platform',
-      tagline: 'Real Vietnamese restaurant. Real customers. Real money.',
+      tagline: 'Real Vietnamese restaurant. Real customers. Real orders.',
       description:
-        'A mobile-first Next.js 16 ordering site running production for a family-owned restaurant. Customers browse, customize, and place pay-in-person pickup orders; staff manage a live Kanban dashboard on a tablet. 13 typed REST API routes with Zod schema validation, server-side order-total recomputation (clients never send prices), HMAC-SHA256 signed HttpOnly session cookies, per-order 128-bit viewToken, Upstash Redis rate limits on every public endpoint, CSRF on every state-changing request, and a Vercel cron heartbeat to keep the Atlas free tier from auto-pausing.',
+        'A mobile-first Next.js 16 ordering site running in production for my family\'s Vietnamese restaurant in Toronto. Customers browse, customize, and place pay-in-person pickup orders; staff run orders, pause ordering and edit the menu from a private tablet dashboard. 13 typed REST API routes with Zod validation, server-side order-total recomputation (clients never send prices), HMAC-SHA256 signed HttpOnly session cookies, per-order 128-bit viewToken, Upstash Redis rate limits on 5 endpoints, CSRF checks on every state-changing request, a Vercel cron heartbeat to keep the Atlas free tier from auto-pausing, and a 22-test Playwright end-to-end suite.',
       tech: [
         'Next.js 16',
         'TypeScript',
@@ -131,21 +168,22 @@ export const siteData: SiteData = {
         'Upstash Redis',
         'Vercel',
         'Zod',
+        'Playwright',
       ],
       links: [
         { label: 'Live site', href: 'https://gingercuisine.ca/' },
         { label: 'GitHub', href: 'https://github.com/tvtrvn/gingercuisine-app' },
       ],
       highlight:
-        'Live in a real restaurant. Polling kitchen dashboard, repeating audio alarm, pause-ordering control, full security model.',
-      year: '2024–2026',
+        'Live in a real restaurant. Polling staff dashboard, background new-order alarm (desktop), pause-ordering control, full security model.',
+      year: '2026',
       role: 'Sole engineer',
       status: 'live',
       kind: 'fullstack',
       featured: true,
       starred: true,
       metrics: [
-        { label: 'Daily customers', value: '50+' },
+        { label: 'Daily customers', value: '~50' },
         { label: 'REST routes', value: '13' },
         { label: 'Rate-limited endpoints', value: '5' },
       ],
@@ -153,9 +191,9 @@ export const siteData: SiteData = {
     {
       id: 'proj-portfolio-analytics',
       title: 'Portfolio Analytics Dashboard',
-      tagline: 'Institutional-grade asset-management terminal — solo build.',
+      tagline: 'Portfolio risk and performance analytics on simulated data — solo build.',
       description:
-        'Full-stack portfolio analytics platform monitoring 4 simulated portfolios across 34 securities and 10 sectors. Built solo with React 18 + TypeScript + Redux Toolkit (4 slices) + Recharts (5 chart types) + Vite 5 on the frontend, Python 3.11 + FastAPI + SQLAlchemy 2.0 + Pydantic v2 on the backend. Designed an 8-table normalized PostgreSQL schema with 6 composite indexes and shipped 10 REST API endpoints serving portfolio summaries, holdings, performance series, attribution, risk metrics, and benchmark comparison. The analytics engine is pure NumPy — 11 financial metrics from first principles (Sharpe ratio, max drawdown, VaR / CVaR, tracking error, beta, annualized volatility), seeded with geometric Brownian motion across 34 securities and ~850 trading days.',
+        'Full-stack portfolio analytics platform for 4 sample portfolios over 32 simulated securities, seeded with geometric Brownian motion. Built solo with React 18 + TypeScript + Redux Toolkit (4 slices) + Recharts (5 chart types) + Vite 5 on the frontend, Python 3.11 + FastAPI + SQLAlchemy 2.0 + Pydantic v2 on the backend. Designed an 8-table normalized PostgreSQL schema with 5 composite indexes and built 18 REST API endpoints serving portfolio summaries, holdings, performance series, attribution, risk metrics, and benchmark comparison. The analytics engine is pure NumPy — 11 financial metrics from first principles (Sharpe ratio, max drawdown, VaR / CVaR, tracking error, beta, annualized volatility).',
       tech: [
         'React 18',
         'TypeScript',
@@ -169,31 +207,29 @@ export const siteData: SiteData = {
         'Pydantic v2',
         'NumPy',
         'PostgreSQL',
-        'Koyeb',
-        'Vercel',
       ],
       links: [
-        { label: 'GitHub', href: 'https://github.com/tvtrvn/portfolio-analytics-dashboard-app' },
+        { label: 'GitHub', href: 'https://github.com/tvtrvn/portfolio-analytics-dashboard' },
       ],
       highlight:
-        '4 portfolios · 34 securities across 10 sectors · 8-table schema, 6 composite indexes · 10 endpoints · 11 metrics from first principles · ~850 trading days.',
+        '4 sample portfolios · 32 simulated securities · 8-table schema, 5 composite indexes · 18 endpoints · 11 metrics from first principles.',
       year: '2026',
       role: 'Sole engineer',
       status: 'shipped',
       kind: 'fullstack',
       featured: true,
       metrics: [
-        { label: 'API endpoints', value: '10' },
+        { label: 'API endpoints', value: '18' },
         { label: 'Financial metrics', value: '11' },
-        { label: 'Securities', value: '34' },
+        { label: 'Simulated securities', value: '32' },
       ],
     },
     {
       id: 'proj-historical-trade-sim',
       title: 'Historical Trade Scenario Simulator',
-      tagline: 'Replay any investment decision against real historical price data.',
+      tagline: 'Replay lump-sum and DCA decisions on real price history since 2010.',
       description:
-        'A trade simulator for lump-sum and dollar-cost-averaging scenarios with benchmark overlays, drawdown chart, per-year return bars, and a full trade ledger. Built with Vite 5, React 18, TypeScript, Tailwind 3, Framer Motion 11, FastAPI, and PostgreSQL 16. Implemented a tiered market-data fallback chain (Tiingo → Yahoo Finance → synthetic GBM) and defense-in-depth middleware: per-IP rate limiting (120 req/min), 64KB body cap, 100 saved-scenarios cap, 30-day TTL cleanup, and a bearer-token-protected maintenance route. 76 passing tests across 4 suites (finance unit, security end-to-end, maintenance, market-data); automated a daily GitHub Actions cron for price refresh + TTL cleanup; enforced HSTS, X-Frame-Options, COOP/CORP, and `no-store` on all API routes.',
+        'A trade simulator for lump-sum and dollar-cost-averaging scenarios across 12 stocks and ETFs with price history back to 2010, with benchmark overlays, drawdown chart, per-year return bars, and a full trade ledger. Built with Vite 5, React 18, TypeScript, Tailwind 3, Framer Motion 11, FastAPI, and PostgreSQL 16. Real prices come from Tiingo with a Yahoo Finance fallback (and a deterministic synthetic fallback as the last tier); defense-in-depth middleware adds per-IP rate limiting (120 req/min), a 64KB body cap, a 100 saved-scenarios cap, 30-day TTL cleanup, and a bearer-token-protected maintenance route. 76 passing tests across 4 suites (finance unit, security end-to-end, maintenance, market-data); a daily GitHub Actions cron handles price refresh + TTL cleanup; HSTS, X-Frame-Options, COOP/CORP, and `no-store` on all API routes.',
       tech: [
         'Vite 5',
         'React 18',
@@ -212,19 +248,20 @@ export const siteData: SiteData = {
         'GitHub Actions',
       ],
       links: [
-        { label: 'GitHub', href: 'https://github.com/tvtrvn/historical-trade-sim-app' },
+        { label: 'Live site', href: 'https://historical-trade-sim.vercel.app/' },
+        { label: 'GitHub', href: 'https://github.com/tvtrvn/historical-trade-sim' },
       ],
       highlight:
-        '76 tests passing · 3-tier market-data fallback · daily TTL cleanup cron · runs forever on free tiers.',
-      year: '2025–2026',
+        '76 tests passing · 12 stocks & ETFs since 2010 · Tiingo → Yahoo Finance fallback · daily TTL cleanup cron.',
+      year: '2026',
       role: 'Designer + sole engineer',
-      status: 'shipped',
+      status: 'live',
       kind: 'fullstack',
       featured: true,
       metrics: [
         { label: 'Backend tests', value: '76' },
-        { label: 'Tickers seeded', value: '12' },
-        { label: 'Security middlewares', value: '7' },
+        { label: 'Stocks & ETFs', value: '12' },
+        { label: 'Hardening controls', value: '7' },
       ],
     },
     {
@@ -232,7 +269,7 @@ export const siteData: SiteData = {
       title: 'FridgeFit — iOS & Android App',
       tagline: 'Flip the recipe app. Start with the fridge, end with dinner.',
       description:
-        'Cross-platform mobile app built with Expo SDK 54, React Native 0.81, React 19, TypeScript, and Expo Router (file-based navigation). State managed via Zustand, local persistence via Expo SQLite, forms via React Hook Form + Zod. Add what is in your fridge; recipes are ranked by ingredient-match against TheMealDB; filter for vegetarian, vegan, gluten-free, dairy-free, nut-free; save favorites and plan meals on a calendar. Scaffold, design system, navigation, and Fridge tab UI shipped (M1). EAS Build + EAS Submit pipeline configured for App Store / Google Play distribution.',
+        'Cross-platform recipe app built with Expo SDK 54, React Native 0.81, React 19, TypeScript, and Expo Router (file-based navigation). State managed via Zustand, local persistence via Expo SQLite, forms via React Hook Form + Zod. Add what is in your fridge and recipes from TheMealDB are ranked by ingredient match; open a recipe detail, save favorites, and set diet and allergen filters that persist. 6 of 8 milestones shipped — ingredient-match discovery, recipe detail, favorites, filters, and onboarding, with core flows tested on real devices. Not released yet: the meal-planner / nutrition milestone and App Store submission are still ahead.',
       tech: [
         'Expo SDK 54',
         'React Native 0.81',
@@ -244,14 +281,13 @@ export const siteData: SiteData = {
         'React Hook Form',
         'Zod',
         'TheMealDB API',
-        'USDA FoodData',
         'EAS Build',
       ],
       links: [
         { label: 'GitHub', href: 'https://github.com/tvtrvn/FridgeFit-app' },
       ],
       highlight:
-        'First mobile app — full design system, offline-first SQLite, file-based routing, EAS Build pipeline.',
+        '6 of 8 milestones shipped · local SQLite persistence · file-based routing · not yet on the App Store.',
       year: '2026',
       role: 'Designer + mobile engineer',
       status: 'in-progress',
@@ -305,7 +341,7 @@ export const siteData: SiteData = {
       title: 'Connect Four — EECS3311 Software Design',
       tagline: 'MVC, Strategy, Factory, and Command patterns from the ground up.',
       description:
-        'Java MVC game with separated model, view, and controller layers; applied Observer, Strategy, Factory, and Command design patterns for a maintainable, extensible architecture. Wrote JUnit unit and integration tests covering board rules, invalid moves, save / load, and undo / redo. Coordinated development using Git / GitHub, Trello, user stories, and Agile-style sprints.',
+        'Team course project: a Java MVC game with separated model, view, and controller layers; applied Observer, Strategy, Factory, and Command design patterns for a maintainable, extensible architecture. Wrote JUnit unit and integration tests covering board rules, invalid moves, save / load, and undo / redo. Coordinated development using Git / GitHub, Trello, user stories, and Agile-style sprints.',
       tech: [
         'Java',
         'JavaFX',
@@ -319,11 +355,11 @@ export const siteData: SiteData = {
         'Trello',
       ],
       links: [
-        { label: 'GitHub', href: 'https://github.com/tvtrvn/connect-four-javafx' },
+        { label: 'GitHub', href: 'https://github.com/tvtrvn/EECS3311-A2-ConnectFour' },
       ],
-      highlight: 'Hand-rolled Command stack for undo / redo · runtime-swappable Strategy AI.',
+      highlight: 'Observer · Strategy · Factory · Command · JUnit tests for undo / redo and save / load.',
       year: '2025',
-      role: 'Coursework + extensions',
+      role: 'Team course project',
       status: 'shipped',
       kind: 'systems',
     },
@@ -332,21 +368,12 @@ export const siteData: SiteData = {
       title: 'ESP32-C3 Embedded LED Firmware',
       tagline: 'WS2812 LED firmware in C + RISC-V Assembly on FreeRTOS.',
       description:
-        'Programmed firmware for an ESP32-C3 development board controlling WS2812 addressable LEDs in C and RISC-V Assembly with FreeRTOS. Implemented hardware timing control at the cycle level, set up the build with ESP-IDF (CMake / Ninja), and debugged the deployment on a physical development board. First exposure to embedded systems work — bare-metal timing, peripheral configuration, and tight memory budgets.',
-      tech: [
-        'C',
-        'RISC-V Assembly',
-        'FreeRTOS',
-        'ESP-IDF',
-        'CMake',
-        'Ninja',
-        'WS2812',
-        'ESP32-C3',
-      ],
+        'Programmed firmware for an ESP32-C3 development board controlling WS2812 addressable LEDs in C and RISC-V Assembly with FreeRTOS. Handled hardware timing control and debugged the firmware on a physical development board.',
+      tech: ['C', 'RISC-V Assembly', 'FreeRTOS', 'WS2812', 'ESP32-C3'],
       links: [],
-      highlight: 'Cycle-accurate WS2812 timing on bare ESP32-C3 hardware.',
+      highlight: 'WS2812 timing control on real ESP32-C3 hardware.',
       year: '2025',
-      role: 'Sole developer',
+      role: 'Firmware developer',
       status: 'shipped',
       kind: 'systems',
     },
@@ -374,6 +401,7 @@ export const siteData: SiteData = {
       title: 'Mastering Design Patterns with Java',
       issuer: 'CodeSignal',
       date: 'Apr 2026',
+      verifyUrl: 'https://codesignal.com/learn/certificates/cmi5b4a3k003kjy04h90j6fip/course-paths/85',
       description:
         'Creational, Structural & Behavioral patterns — Singleton, Factory Method, Builder, Adapter, Decorator, Composite, Observer, Strategy, Command.',
     },
@@ -382,6 +410,7 @@ export const siteData: SiteData = {
       title: 'Spring Boot REST API with Java & Gradle',
       issuer: 'CodeSignal',
       date: 'May 2026',
+      verifyUrl: 'https://codesignal.com/learn/certificates/cmi5b4a3k003kjy04h90j6fip/course-paths/107',
       description:
         'Spring Core, Dependency Injection, REST Controllers, Spring Data JPA, entity relationships, pagination & sorting.',
     },
@@ -395,17 +424,18 @@ export const siteData: SiteData = {
   resume: {
     fileName: 'resume.pdf',
     summary: [
-      'B.A. Computer Science (Honours) · York University · Sept 2023 – May 2027 (expected).',
-      'Full-stack developer shipping production-grade web apps end-to-end — from REST API design and security hardening to data-driven frontends and mobile builds.',
-      'Shipped 9 production-shape projects spanning full-stack web, fintech analytics (NumPy + FastAPI + Recharts), mobile (React Native + Expo), embedded firmware (ESP32-C3 in C + RISC-V Assembly), Chrome extensions, and Java systems work.',
-      'Strong testing instincts — 76 backend tests on the Historical Trade Simulator, defense-in-depth security middleware on every production endpoint, JUnit on Java work.',
+      'B.A. Computer Science (Honours), Co-op · York University · Sep 2024 – Expected 2027.',
+      'Learning Technology & AI Enablement Intern at Groupe Bel Canada (Jul 2026 – Present): 30+ SCORM e-learning packages, including 18 capability courses live on the corporate LMS, and a Power BI learning-engagement report (72 DAX measures) used by the team.',
+      "Full-stack developer shipping production web apps end-to-end — sole developer of Pho Ginger's live ordering platform and owner of Swimingo's Florida-expansion web workstream (14 Florida pages across 6 merged pull requests).",
+      'Builds with Claude Code agent teams: designs and directs the work, with separate validator agents checking it before it ships.',
+      'Strong testing instincts — 76 backend tests on the Historical Trade Simulator, a 22-test Playwright end-to-end suite on Pho Ginger, JUnit on Java work.',
       'CodeSignal-certified: Mastering Design Patterns with Java (Apr 2026), Spring Boot REST API with Java & Gradle (May 2026).',
-      'Languages: TypeScript, JavaScript, Python, Java, C / C++, C# (Basic), SQL, HTML / CSS. Spoken: English (native), French (fluent), Vietnamese (advanced).',
+      'Languages: TypeScript, JavaScript, Python, Java, C / C++, C# (Basic), SQL, DAX, HTML / CSS. Spoken: English (native), French (fluent), Vietnamese (advanced).',
     ],
   },
   seo: {
     title: 'Thinh Tran — Full-Stack Developer & CS Student',
     description:
-      'Portfolio of Thinh Tran. Full-stack web, fintech analytics, mobile, embedded firmware, and developer tools. B.A. Computer Science (Honours) at York University, class of 2027.',
+      'Portfolio of Thinh Tran. Full-stack web, AI-agent automation, e-learning technology, analytics, mobile, and developer tools. B.A. Computer Science (Honours), Co-op at York University, expected 2027.',
   },
 };

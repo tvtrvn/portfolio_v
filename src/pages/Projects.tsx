@@ -123,7 +123,7 @@ export const ProjectsPage: React.FC = () => {
           <SectionHeader
             number="01"
             eyebrow="SELECTED WORK"
-            title="Nine projects, one through-line: real users, real data, real infra."
+            title="Nine projects, one through-line: real software, built end to end."
             description="Each card shows the role I played, the year, the live status, and the stack. Click through to live demos or source on GitHub."
           />
         </Reveal>

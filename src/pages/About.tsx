@@ -6,11 +6,11 @@ import {
   GlobeHemisphereWest,
   Plus,
   Quotes,
-  Heart,
+  Basketball,
   Mountains,
   Barbell,
   ForkKnife,
-  Books,
+  MusicNotes,
   Code,
   Stack,
   Toolbox,
@@ -24,18 +24,18 @@ import { siteData } from '../content/siteData';
 import { cn } from '../utils/cn';
 
 const STATS = [
-  { value: '9', label: 'Production-shape projects shipped' },
-  { value: '76', label: 'Backend tests passing' },
+  { value: String(siteData.projects.filter((p) => p.status !== 'in-progress').length), label: 'Projects shipped' },
+  { value: '76', label: 'Trade Sim backend tests passing' },
   { value: '3', label: 'Languages spoken' },
   { value: '2027', label: 'Expected B.A. graduation' },
 ] as const;
 
 const OFF_KEYBOARD_CHIPS = [
-  { icon: Heart, label: 'Raptors' },
+  { icon: Basketball, label: 'Basketball' },
   { icon: Mountains, label: 'Rock climbing' },
   { icon: Barbell, label: 'Weightlifting' },
   { icon: ForkKnife, label: 'Cooking' },
-  { icon: Books, label: 'Reading' },
+  { icon: MusicNotes, label: 'Music' },
 ] as const;
 
 export const AboutPage: React.FC = () => {
@@ -51,7 +51,7 @@ export const AboutPage: React.FC = () => {
           <SectionHeader
             number="00"
             eyebrow="ABOUT"
-            title="A third-year CS student building production software."
+            title="A CS co-op student building production software."
             description={
               <span
                 style={{ textWrap: 'pretty' as React.CSSProperties['textWrap'] }}
@@ -282,7 +282,7 @@ export const AboutPage: React.FC = () => {
               className="relative z-[1] pl-10 font-display text-[clamp(28px,4vw,52px)] font-light italic leading-[1.1] tracking-tighter2 text-fg sm:pl-14"
               style={{ textWrap: 'balance' as React.CSSProperties['textWrap'] }}
             >
-              I help run my family&apos;s Vietnamese restaurant, lift, climb, and watch every single Raptors game.
+              I play basketball, volleyball and badminton, climb, lift, and cook.
             </blockquote>
             <div className="relative z-[1] mt-10 flex flex-wrap gap-2 pl-10 sm:pl-14">
               {OFF_KEYBOARD_CHIPS.map(({ icon: Icon, label }) => (
