@@ -22,6 +22,7 @@ import { sortStarredFirst } from '../utils/sortProjects';
 
 const techMarqueeItems = [
   'TypeScript',
+  'Claude Code',
   'Next.js',
   'React',
   'FastAPI',
@@ -42,9 +43,12 @@ const techMarqueeItems = [
   'GitHub Actions',
   'Docker',
   'pytest',
+  'Playwright',
   'Recharts',
   'Zustand',
   'Redux Toolkit',
+  'Power BI',
+  'SCORM 2004',
 ];
 
 export const HomePage: React.FC = () => {
@@ -119,8 +123,8 @@ export const HomePage: React.FC = () => {
                 <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.18em]">Shipped projects</p>
               </div>
               <div>
-                <p className="font-display text-2xl font-light tabular text-fg">76</p>
-                <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.18em]">Trade Sim tests</p>
+                <p className="font-display text-2xl font-light tabular text-fg">30+</p>
+                <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.18em]">SCORM packages</p>
               </div>
               <div>
                 <p className="font-display text-2xl font-light tabular text-fg">2027</p>
@@ -168,20 +172,20 @@ export const HomePage: React.FC = () => {
                   <div>lng 79.3832°W</div>
                 </div>
                 <div className="text-right">
-                  <div>rev 02</div>
-                  <div>2025</div>
+                  <div>rev 03</div>
+                  <div>2026</div>
                 </div>
               </div>
 
               {/* Floating status chips */}
-              <div className="pointer-events-none absolute right-5 top-5 flex flex-col items-end gap-2 text-right">
+              <div className="pointer-events-none absolute right-5 top-11 flex flex-col items-end gap-2 text-right">
                 <span className="rounded-full border border-line bg-ink-900/40 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.18em] text-fg/80 backdrop-blur">
                   <CircleNotch weight="bold" className="mr-1.5 inline-block h-3 w-3 animate-spin-slow" />
-                  on call · pho ginger
+                  co-op · groupe bel canada
                 </span>
                 <span className="rounded-full border border-line bg-ink-900/40 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.18em] text-fg/80 backdrop-blur">
                   <Lightning weight="fill" className="mr-1.5 inline-block h-3 w-3 text-amber-400" />
-                  live: gingercuisine.ca
+                  on call · pho ginger
                 </span>
               </div>
 
@@ -194,16 +198,16 @@ export const HomePage: React.FC = () => {
                 }}
               >
                 <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-fg/60">
-                  Featured build
+                  Now building · SCORM
                 </p>
                 <p className="mt-2 font-display text-[28px] font-light leading-[1.05] tracking-tighter2 text-fg">
-                  Historical Trade
+                  <span className="whitespace-nowrap">E-learning</span>
                   <br />
-                  Scenario Simulator
+                  &amp; Power BI
                 </p>
                 <div className="mt-3 flex items-center justify-between font-mono text-[10.5px] tabular text-fg/70">
-                  <span>76 tests · pass</span>
-                  <span className="text-amber-400">12 tickers</span>
+                  <span>30+ packages</span>
+                  <span className="text-amber-400">18 courses live</span>
                 </div>
               </div>
             </div>

@@ -131,7 +131,7 @@ export const ContactPage: React.FC = () => {
             number="04"
             eyebrow="GET IN TOUCH"
             title="Let's talk — about co-ops, projects, or just curious questions."
-            description="Replies usually within 24 hours during the school week. I'm in Toronto (EST)."
+            description="Replies usually within 24 hours on weekdays. I'm in Toronto (EST)."
             size="lg"
           />
         </Reveal>
@@ -302,7 +302,7 @@ export const ContactPage: React.FC = () => {
                     Message received.
                   </h2>
                   <p className="mx-auto max-w-md text-[15px] leading-relaxed text-muted">
-                    I&apos;ll get back to you within 24 hours. In the meantime, you can{' '}
+                    I&apos;ll get back to you within 24 hours on weekdays. In the meantime, you can{' '}
                     <Link to="/projects" className="text-accent underline decoration-amber-400/35 underline-offset-4 transition-colors duration-300 ease-premium hover:decoration-amber-400/70">
                       browse my recent work
                     </Link>{' '}
