@@ -1,7 +1,7 @@
 import type { SiteData } from '../types/content';
 
 // All portfolio content lives here. Update this file to customize the site.
-// Synced with master_resume_2026-10-01/master_resume.pdf (refreshed 2026-10-01).
+// Synced with master_resume_2026-10-01/master_resume.pdf (refreshed 2026-10-09: Zod wording verified at gingercuisine HEAD 4b820fd).
 export const siteData: SiteData = {
   name: 'Thinh Tran',
   role: 'Full-Stack Developer · CS Student',
@@ -137,7 +137,7 @@ export const siteData: SiteData = {
       start: 'Mar 2026',
       end: 'Present',
       description:
-        'Built and maintain a production ordering platform serving about 50 customers a day, as sole developer orchestrating Claude Code agents: customer storefront and private staff tablet dashboard in Next.js 16, TypeScript, React 19, Tailwind v4, MongoDB Atlas, Prisma 6 and Vercel. Developed 13 typed REST API routes with Zod validation and server-side recomputation of every order total, eliminating client-side price tampering. Hardened the platform with HMAC-SHA256 signed HttpOnly session cookies, Upstash Redis sliding-window rate limits on 5 endpoints, CSRF origin checks and HSTS / security headers; cleared ~19 security advisories in a July 2026 dependency upgrade. Shipped owner-editable menu management (sold-out toggles, price overrides, photo uploads) and a background new-order alarm (desktop) the owner accepted in testing; a 22-test Playwright end-to-end suite checks that menu edits reach the storefront and sold-out orders are rejected.',
+        'Built and maintain a production ordering platform serving about 50 customers a day, as sole developer orchestrating Claude Code agents: customer storefront and private staff tablet dashboard in Next.js 16, TypeScript, React 19, Tailwind v4, MongoDB Atlas, Prisma 6 and Vercel. Developed 13 typed REST API routes, validating every JSON request body with Zod and recomputing every order total on the server to eliminate client-side price tampering. Hardened the platform with HMAC-SHA256 signed HttpOnly session cookies, Upstash Redis sliding-window rate limits on 5 endpoints, CSRF origin checks and HSTS / security headers; cleared ~19 security advisories in a July 2026 dependency upgrade. Shipped owner-editable menu management (sold-out toggles, price overrides, photo uploads) and a background new-order alarm (desktop) the owner accepted in testing; a 22-test Playwright end-to-end suite checks that menu edits reach the storefront and sold-out orders are rejected.',
     },
     {
       id: 'exp-aritzia',
@@ -156,7 +156,7 @@ export const siteData: SiteData = {
       title: 'Pho Ginger — Pickup Ordering Platform',
       tagline: 'Real Vietnamese restaurant. Real customers. Real orders.',
       description:
-        'A mobile-first Next.js 16 ordering site running in production for my family\'s Vietnamese restaurant in Toronto. Customers browse, customize, and place pay-in-person pickup orders; staff run orders, pause ordering and edit the menu from a private tablet dashboard. 13 typed REST API routes with Zod validation, server-side order-total recomputation (clients never send prices), HMAC-SHA256 signed HttpOnly session cookies, per-order 128-bit viewToken, Upstash Redis rate limits on 5 endpoints, CSRF checks on every state-changing request, a Vercel cron heartbeat to keep the Atlas free tier from auto-pausing, and a 22-test Playwright end-to-end suite.',
+        'A mobile-first Next.js 16 ordering site running in production for my family\'s Vietnamese restaurant in Toronto. Customers browse, customize, and place pay-in-person pickup orders; staff run orders, pause ordering and edit the menu from a private tablet dashboard. 13 typed REST API routes with Zod validating every JSON request body, server-side order-total recomputation (clients never send prices), HMAC-SHA256 signed HttpOnly session cookies, per-order 128-bit viewToken, Upstash Redis rate limits on 5 endpoints, CSRF checks on every state-changing request, a Vercel cron heartbeat to keep the Atlas free tier from auto-pausing, and a 22-test Playwright end-to-end suite.',
       tech: [
         'Next.js 16',
         'TypeScript',
