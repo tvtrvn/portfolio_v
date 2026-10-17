@@ -9,13 +9,13 @@ export const siteData: SiteData = {
   heroTagline:
     'Shipping production-grade software end-to-end — from REST APIs and security hardening to e-learning, analytics and AI-agent automation.',
   heroIntro:
-    'Computer Science co-op student at York University (expected 2027), currently a Learning Technology & AI Enablement Intern at Groupe Bel Canada. I ship production web apps, AI-agent automation, e-learning technology and analytics for real organizations — with a bias toward shipping, testing, and work that holds up under real users.',
+    'Computer Science co-op student at York University (expected 2028), currently a Learning Technology & AI Enablement Intern at Groupe Bel Canada. I ship production web apps, AI-agent automation, e-learning technology and analytics for real organizations — with a bias toward shipping, testing, and work that holds up under real users.',
   heroHighlights: [
     {
       label: 'Currently',
       items: [
         'Learning Technology & AI Enablement Intern · Groupe Bel Canada',
-        'B.A. Computer Science (Honours), Co-op · York University · Sep 2024 – Expected 2027',
+        'B.A. Computer Science (Honours), Co-op · York University · Sep 2024 – Expected 2028',
         'Available for Summer 2027 co-op',
       ],
     },
@@ -38,7 +38,7 @@ export const siteData: SiteData = {
   ],
   about: {
     paragraphs: [
-      "I'm a B.A. Computer Science (Honours) co-op student at York University, expected to graduate in 2027, focused on full-stack engineering, analytics, and AI-agent automation. I care about code that ships — well-tested, observable, and pleasant to work in six months from now.",
+      "I'm a B.A. Computer Science (Honours) co-op student at York University, expected to graduate in 2028, focused on full-stack engineering, analytics, and AI-agent automation. I care about code that ships — well-tested, observable, and pleasant to work in six months from now.",
       "Right now I'm a Learning Technology & AI Enablement Intern at Groupe Bel Canada, building SCORM e-learning for the company's learning platform and a weekly-refreshed Power BI learning-engagement report the team uses. Over the summer I owned the Florida-expansion web workstream at Swimingo through Riipen Labs, and I'm the on-call developer for Pho Ginger, my family's Vietnamese restaurant, and its live ordering platform.",
       'My own projects span full-stack web (Next.js + FastAPI), portfolio analytics (Python + NumPy + Recharts), mobile (React Native + Expo), embedded firmware (ESP32-C3 in C + RISC-V Assembly), and Java coursework. I prefer building the boring scaffolding (rate limits, security headers, TTL cleanup crons, fallback chains) over chasing what is trendy, and I build with Claude Code agent teams: I design and direct the work, and separate validator agents check it before it ships.',
       'I think design and engineering should not be separated. Every web project I ship has a deliberate visual language, a typography scale, and motion that respects physics. I treat the UI layer with the same rigor as the backend.',
@@ -95,7 +95,7 @@ export const siteData: SiteData = {
       company: 'York University',
       location: 'Toronto, Ontario',
       start: 'Sep 2024',
-      end: 'Expected 2027',
+      end: 'Expected 2028',
       description:
         'Co-op program; first work term at Groupe Bel Canada, Fall 2026. Relevant coursework: Data Structures & Algorithms, Computer Organization (A+), Database Systems, Software Design (UML, requirements, SDLC), Professional Practice in Computing (A), Software Tools. Prior study: Western University (2021–2024), including a year of media studies with hands-on Adobe Premiere Pro coursework.',
     },
@@ -424,7 +424,7 @@ export const siteData: SiteData = {
   resume: {
     fileName: 'resume.pdf',
     summary: [
-      'B.A. Computer Science (Honours), Co-op · York University · Sep 2024 – Expected 2027.',
+      'B.A. Computer Science (Honours), Co-op · York University · Sep 2024 – Expected 2028.',
       'Learning Technology & AI Enablement Intern at Groupe Bel Canada (Jul 2026 – Present): 30+ SCORM e-learning packages, including 18 capability courses live on the corporate LMS, and a Power BI learning-engagement report (72 DAX measures) used by the team.',
       "Full-stack developer shipping production web apps end-to-end — sole developer of Pho Ginger's live ordering platform and owner of Swimingo's Florida-expansion web workstream (14 Florida pages across 6 merged pull requests).",
       'Builds with Claude Code agent teams: designs and directs the work, with separate validator agents checking it before it ships.',
@@ -436,6 +436,6 @@ export const siteData: SiteData = {
   seo: {
     title: 'Thinh Tran — Full-Stack Developer & CS Student',
     description:
-      'Portfolio of Thinh Tran. Full-stack web, AI-agent automation, e-learning technology, analytics, mobile, and developer tools. B.A. Computer Science (Honours), Co-op at York University, expected 2027.',
+      'Portfolio of Thinh Tran. Full-stack web, AI-agent automation, e-learning technology, analytics, mobile, and developer tools. B.A. Computer Science (Honours), Co-op at York University, expected 2028.',
   },
 };

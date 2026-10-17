@@ -127,7 +127,7 @@ export const HomePage: React.FC = () => {
                 <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.18em]">SCORM packages</p>
               </div>
               <div>
-                <p className="font-display text-2xl font-light tabular text-fg">2027</p>
+                <p className="font-display text-2xl font-light tabular text-fg">2028</p>
                 <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.18em]">B.A. CS · York</p>
               </div>
             </div>

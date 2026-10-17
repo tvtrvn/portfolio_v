@@ -27,7 +27,7 @@ const STATS = [
   { value: String(siteData.projects.filter((p) => p.status !== 'in-progress').length), label: 'Projects shipped' },
   { value: '76', label: 'Trade Sim backend tests passing' },
   { value: '3', label: 'Languages spoken' },
-  { value: '2027', label: 'Expected B.A. graduation' },
+  { value: '2028', label: 'Expected B.A. graduation' },
 ] as const;
 
 const OFF_KEYBOARD_CHIPS = [
