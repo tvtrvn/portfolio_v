@@ -103,11 +103,11 @@ export const siteData: SiteData = {
       id: 'exp-bel',
       role: 'Learning Technology & AI Enablement Intern',
       company: 'Groupe Bel Canada',
-      location: 'Mississauga, Ontario (Hybrid)',
+      location: 'Mississauga, Ontario (Remote)',
       start: 'Jul 2026',
       end: 'Present',
       description:
-        "Orchestrated Claude Code agent teams with independent validators to build 30+ SCORM e-learning packages for the company's global learning academy, including 18 capability courses now live on the corporate LMS. Fixed a quiz-export defect that marked low scorers \"failed\" and kept them from completing a learning pathway: traced it in the package, rewrote its LMS reporting for SCORM 2004 so a below-pass attempt stays open for retry, and proved both paths on a real SCORM engine. Restored full learner tracking after finding that replacement quizzes sent the LMS less data than the packages they replaced. Built and maintain a Power BI report (10 pages, 72 DAX measures) tracking learning engagement for a 1,769-person community across ~18,000 activity records, used by the team and refreshed weekly, after auditing the LMS export and catching a sign-in total inflated 35×. Building a two-hour, demo-led Microsoft Copilot workshop for the team (delivering Oct 19, 2026), and rebuilt 2.4 hours of recorded system-training webinars into an 8-module narrated, subtitled video series (release pending).",
+        "Orchestrated Claude Code agent teams with independent validators to build 30+ SCORM e-learning packages for the company's global learning academy, including 18 capability courses now live on the corporate LMS. Fixed a quiz-export defect that marked low scorers \"failed\" and kept them from completing a learning pathway: traced it in the package, rewrote its LMS reporting for SCORM 2004 so a below-pass attempt stays open for retry, and proved both paths on a real SCORM engine. Restored full learner tracking after finding that replacement quizzes sent the LMS less data than the packages they replaced. Built and maintain a Power BI report (10 pages, 72 DAX measures) tracking learning engagement for a 1,769-person community across ~18,000 activity records, used by the team and refreshed weekly, after auditing the LMS export and catching a sign-in total inflated 35×. Delivered a two-hour, demo-led Microsoft Copilot workshop in person at the team's offsite in France, and rebuilt 2.4 hours of recorded system-training webinars into an 8-module narrated, subtitled video series (release pending).",
     },
     {
       id: 'exp-swimingo',
